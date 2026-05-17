@@ -16,12 +16,16 @@ Release date: 2026-05-17
 Type: Research Note
 Publication code: RN-033
 Version: v1.2 RC2
+DOI: [10.17605/OSF.IO/76CZR](https://doi.org/10.17605/OSF.IO/76CZR) (minted 2026-05-17, OSF / DataCite)
 
 ## Public Routes
 
 - Website: https://panta-rhei.site/publications/research-notes/reading-prometheus-through-tau/
 - PDF: https://panta-rhei.site/assets/pdfs/research-notes/research-note-2026-05-17-reading-prometheus-through-tau-rc2.pdf
-- DOI: pending. The programme migrated from Zenodo to OSF (Open Science Framework) as the primary DOI platform on 2026-05-17. The OSF project metadata package is staged in the papers/ repo at `papers/research-notes/reading-prometheus-through-tau-v1/OSF-METADATA.md`; once the project is created and the DOI is minted, the resolvable identifier will be of the form `10.17605/OSF.IO/XXXXX`.
+- DOI: https://doi.org/10.17605/OSF.IO/76CZR
+- OSF project: https://osf.io/76CZR/
+
+This is the **first Panta Rhei Research note minted on OSF** following the programme's chair-authority migration from Zenodo to OSF as the primary DOI platform on 2026-05-17. The reusable OSF project metadata package lives at `papers/research-notes/reading-prometheus-through-tau-v1/OSF-METADATA.md`.
 
 ## External Source Routes
 

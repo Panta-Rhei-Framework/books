@@ -14,10 +14,10 @@ license: CC-BY-4.0
 website: https://panta-rhei.site/publications/research-notes/reading-prometheus-through-tau/
 pdf: https://panta-rhei.site/assets/pdfs/research-notes/research-note-2026-05-17-reading-prometheus-through-tau-rc2.pdf
 source: reading-prometheus-through-tau.tex
-doi: ""
-doi_url: ""
-osf_doi_pending: true
-osf_doi_target_form: "10.17605/OSF.IO/XXXXX"
+doi: "10.17605/OSF.IO/76CZR"
+doi_url: "https://doi.org/10.17605/OSF.IO/76CZR"
+osf_url: "https://osf.io/76CZR/"
+osf_short_id: "76CZR"
 anchor_paper:
   citation: "Mahadevan, S., 2026, PROMETHEUS: Automating Deep Causal Research Integrating Text, Data, and Scientific Models"
   arxiv: "2605.12835"
@@ -67,8 +67,8 @@ claim_boundary:
     - It does not claim that the τ-canon topos uses H_τ-valued enrichment at the presheaf codomain — both PROMETHEUS and τ-canon use Set-valued presheaves.
     - It does not claim a formal PSR-as-Hankel identification in the corpus.
     - It does not claim the latent F-channel prediction is engineering-ready; it is a structural prediction whose route is the cSQL polarity field.
-    - Para-mind classification is descriptive (per VII.D55: "A para-mind is not a defective mind"), not pejorative.
-    - PROMETHEUS does not implement Ω_τ literally; "earned-not-imposed" is articulation, not critique.
+    - 'Para-mind classification is descriptive (per VII.D55: "A para-mind is not a defective mind"), not pejorative.'
+    - 'PROMETHEUS does not implement Ω_τ literally; "earned-not-imposed" is articulation, not critique.'
     - It does not ask PROMETHEUS to retract its engineering choices.
 trust_budget:
   taulib_sorry_count: 0
