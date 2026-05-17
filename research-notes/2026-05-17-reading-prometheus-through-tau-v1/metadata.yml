@@ -1,0 +1,96 @@
+publication_id: RN-033
+publication_key: research_notes.reading_prometheus_through_tau
+title: "Reading PROMETHEUS Through Category τ"
+subtitle: "Para-Minds, the Earned Belnap-Truth4 Classifier, and the Φ_∂ Boundary Functor of Exact Gluing"
+authors:
+  - Thorsten Fuchs
+  - Anna-Sophie Fuchs
+type: Research Note
+status: RC2 public release candidate
+version: v1.2 RC2
+date: 2026-05-17
+program: Panta Rhei Research Program
+license: CC-BY-4.0
+website: https://panta-rhei.site/publications/research-notes/reading-prometheus-through-tau/
+pdf: https://panta-rhei.site/assets/pdfs/research-notes/research-note-2026-05-17-reading-prometheus-through-tau-rc2.pdf
+source: reading-prometheus-through-tau.tex
+doi: ""
+doi_url: ""
+osf_doi_pending: true
+osf_doi_target_form: "10.17605/OSF.IO/XXXXX"
+anchor_paper:
+  citation: "Mahadevan, S., 2026, PROMETHEUS: Automating Deep Causal Research Integrating Text, Data, and Scientific Models"
+  arxiv: "2605.12835"
+  arxiv_url: https://arxiv.org/abs/2605.12835
+  notes: "Preprint v1, 13 May 2026, draft under revision"
+tags:
+  - tau-framework
+  - prometheus
+  - topos-world-model
+  - belnap-dunn-4-valued-logic
+  - paraconsistent-logic
+  - para-mind
+  - subobject-classifier
+  - sheaf-gluing
+  - boundary-functor
+  - langlands-coherent-force
+  - llm-as-causal-extractor
+  - external-topos-construction
+  - category-tau
+summary: >
+  Short ontology-articulation note. Structural reading of the PROMETHEUS preprint
+  (Mahadevan 2026, arXiv:2605.12835v1) through Category τ. PROMETHEUS introduces a
+  "Topos World Model" framework that turns retrieved corpora into sheaf-like causal
+  atlases of local Predictive State Representations with a 4-fold gluing diagnostic
+  (agreement, drift, contradiction, underdetermination); the categorical machinery
+  is invoked heuristically. This note articulates three τ-canon structural
+  contributions: (i) the 4-fold gluing diagnostic IS the earned subobject classifier
+  Ω_τ = Truth4 (Theorem I.T25 of Book I); (ii) exact gluing is achievable via the
+  boundary functor Φ_∂ (Langlands Coherent Force, Theorem III.T50 of Book III);
+  (iii) the Para-Mind reading (Definition VII.D55 of Book VII) explains why
+  PROMETHEUS's external-topos construction is structurally licensed — an LLM by
+  itself is a para-mind without an internal topos. One constructive structural
+  prediction is introduced: PROMETHEUS's existing cSQL polarity field is the route
+  to a fifth Belnap-F gluing diagnostic. Seven explicit non-claims keep the trust
+  budget honest. Peer-review-clean across two rounds (six panels: Wave Δ₂
+  Discipline/Structural/PROMETHEUS-Fidelity plus Wave Δ₃ Editorial/Scientific/Visual).
+claim_boundary:
+  core: >
+    PROMETHEUS's 4-fold gluing diagnostic structurally coincides with the earned
+    subobject classifier Ω_τ = Truth4 = {T, F, B, N} of an earned topos
+    PSh(Cat_τ); its ε-tolerance gluing is upgradable to exact gluing via the
+    boundary functor Φ_∂ which PROMETHEUS lacks; and the external-topos
+    construction is structurally licensed by the para-mind status of its LLM
+    substrate. The dialogue is articulative, not adversarial.
+  non_claims:
+    - It does not endorse PROMETHEUS's "Topos World Model" terminology in its current form (the categorical desiderata are invoked heuristically, not constructed in §7).
+    - It does not claim that the τ-canon topos uses H_τ-valued enrichment at the presheaf codomain — both PROMETHEUS and τ-canon use Set-valued presheaves.
+    - It does not claim a formal PSR-as-Hankel identification in the corpus.
+    - It does not claim the latent F-channel prediction is engineering-ready; it is a structural prediction whose route is the cSQL polarity field.
+    - Para-mind classification is descriptive (per VII.D55: "A para-mind is not a defective mind"), not pejorative.
+    - PROMETHEUS does not implement Ω_τ literally; "earned-not-imposed" is articulation, not critique.
+    - It does not ask PROMETHEUS to retract its engineering choices.
+trust_budget:
+  taulib_sorry_count: 0
+  taulib_axiom_count: 3
+  manuscript_chapters_modified: 0
+  peer_review_panels: 6
+  peer_review_rounds: 2
+  total_fixes_applied: 23
+  load_bearing_revisions: 0
+companion_notes:
+  - slug: bsmm-tau-canon-interpretation-v1
+    pattern: interpretation
+  - slug: bsmm-tau-canon-anomaly-v1
+    pattern: anomaly
+    version: v1.9
+  - slug: bsmm-tau-canon-T1-v1
+    pattern: closure-derivation
+  - slug: bsmm-tau-canon-F2-projection-v1
+    pattern: F2-projection-closure
+  - slug: running-as-spectral-aperture-v1
+    pattern: ontology-articulation
+  - slug: foundations-categorical-cosmological-billiards-v1
+    pattern: foundation-comparison
+note_pattern: ontology-articulation
+note_subtype: external-topos-dialogue
