@@ -1,0 +1,71 @@
+{
+  "schema": "panta-rhei-publication-manifest-v2",
+  "id": "2026-05-17-natarajan-cluster-dichotomy-categorical",
+  "publication_id": "rn032",
+  "publication_key": "research_notes.natarajan_cluster_dichotomy_categorical",
+  "type": "research_note",
+  "status": "v1_0_public_release",
+  "artifact_availability": "local_pdf",
+  "generated_at": "2026-05-17T08:30:00Z",
+  "file": {
+    "path": "research-note-2026-05-17-natarajan-cluster-dichotomy-categorical.pdf",
+    "bytes": 204221,
+    "sha256": "8a77968fe1f117fced0085034060045bd02fa1e5cea6c4af42ec0e850df3295c",
+    "sha512": "9dca46c1a59cdc66c0c517298f104e6630e63e30d705f9c4e393ff00e55e976118aaea713fd581b22e46c0a35d09cba9af448c863714f936b7eda2e7bda43d58",
+    "source_website_asset_path": "site/assets/pdfs/research-notes/research-note-2026-05-17-natarajan-cluster-dichotomy-categorical.pdf"
+  },
+  "source": {
+    "path": "natarajan-cluster-dichotomy-categorical.tex",
+    "bytes": 46891,
+    "sha256": "4b30df54be916d4285c6c3fac28cab1ee499106cc0ac9b45f02781001972dd00",
+    "sha512": "92e03ea388fc7ee7093a31fca77da750fa9d022fb87a23a7fab3acfc80bfa991f0ade6dd3e75e210dce58fa078a3d0a1d3f8dd8ba0172f6161bae9d92ee288e8"
+  },
+  "checksums": {
+    "sha256": "8a77968fe1f117fced0085034060045bd02fa1e5cea6c4af42ec0e850df3295c",
+    "sha512": "9dca46c1a59cdc66c0c517298f104e6630e63e30d705f9c4e393ff00e55e976118aaea713fd581b22e46c0a35d09cba9af448c863714f936b7eda2e7bda43d58"
+  },
+  "opentimestamps": {
+    "status": "not_created",
+    "verification": "not_applicable_for_this_sprint"
+  },
+  "publication": {
+    "title": "The Natarajan Dichotomy as One D-Sector Readout in Two Regimes",
+    "subtitle": "A τ-Categorical Pre-Registration against the Natarajan, Chiang & Dutra (2026) Multiscale Cluster-Lensing CDM Crisis",
+    "authors": "Thorsten Fuchs and Anna-Sophie Fuchs",
+    "publication_type": "Research Note",
+    "date": "2026-05-17",
+    "version": "v1.0",
+    "status": "v1.0 public release",
+    "license": "CC-BY-4.0",
+    "doi": "10.5281/zenodo.20251191",
+    "doi_url": "https://doi.org/10.5281/zenodo.20251191",
+    "zenodo_url": "https://zenodo.org/records/20251191",
+    "canonical_url": "https://panta-rhei.site/publications/research-notes/natarajan-cluster-dichotomy-categorical/",
+    "website_url": "https://panta-rhei.site/publications/research-notes/natarajan-cluster-dichotomy-categorical/",
+    "pdf_filename": "research-note-2026-05-17-natarajan-cluster-dichotomy-categorical.pdf",
+    "source_website_page": "_research_notes/2026-05-17-natarajan-cluster-dichotomy-categorical.md",
+    "github_path": "research-notes/2026-05-17-natarajan-cluster-dichotomy-categorical",
+    "artifact_availability": "local_pdf",
+    "route_status": "released",
+    "abstract": "Natarajan, Chiang & Dutra (2026, ApJL 1001, L12) report a new cold-dark-matter crisis from multiscale gravitational lensing of three massive clusters compared to TNG-Cluster analogs. Four substructure diagnostics yield a dichotomy: the same member-galaxy subhalos must carry steep inner density slopes (core-collapsed SIDM-like) and collisionless-CDM-like outer tidal extents. We pre-register a Category-τ reading as one D-sector readout in two regimes, with three τ-distinctive positive readings, one numerical anchor (r_trans ≈ 3.4–10.8 kpc), and an 11-row N16 falsification surface. Headline pre-registered falsifier: host-mass independence of r_trans at fixed SHMF, testable with Euclid + Rubin LSST + JWST/Roman by ~2029.",
+    "claim_boundary": {
+      "claim": "Under the τ-framework's capacity-gradient gravity sector and boundary-holonomy mass closure (V.D272), the Natarajan dichotomy is a regime-projection of one D-sector readout — inner M∂(R) number-promotion + outer Newtonian-limit truncation — governed by a single transition scale ℓ_cl,sub(M_sub).",
+      "non_claim": "It does not derive the γ ≳ 2.5 inner density slope, the SHMF amplitude, or the 5σ–40σ inner-excess amplitude from existing primitives; it does not supersede the V.T203 conjectural status; it does not claim τ-physics is Lean-verified as external physics; it is not a substitute for direct dialogue with the source-paper authors."
+    },
+    "related_lanes": [
+      "corpus",
+      "verify",
+      "publications",
+      "impact"
+    ],
+    "related_routes": [
+      "/publications/research-notes/natarajan-cluster-dichotomy-categorical/",
+      "/publications/research-notes/dark-matter-without-dark-matter-ksz-force-law/",
+      "/corpus/registry/",
+      "/corpus/taulib/",
+      "/verify/taulib/",
+      "/verify/release-manifest/"
+    ]
+  },
+  "integrity_note": "Hashes attest to the PDF bytes and release source snapshot only; they do not certify correctness, peer review, legal status, or content validity. The Zenodo DOI 10.5281/zenodo.20251191 provides the citation-grade resolvable identifier for this artifact."
+}

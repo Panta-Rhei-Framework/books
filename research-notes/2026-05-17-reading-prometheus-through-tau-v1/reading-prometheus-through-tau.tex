@@ -1,0 +1,858 @@
+% ==========================================================================
+%  Reading PROMETHEUS Through Category τ:
+%  Para-Minds, the Earned Belnap-Truth4 Classifier, and the Φ_∂
+%  Boundary Functor of Exact Gluing
+%
+%  Thorsten Fuchs & Anna-Sophie Fuchs
+%  Panta Rhei Research Program
+%  May 2026 (v1.0 — Ontology-Articulation Note)
+%
+%  Scope: structural articulation of τ-canon's reading of the
+%  PROMETHEUS framework (Mahadevan 2026, arXiv:2605.12835v1).
+%  This is an ontology-articulation note in the sense of
+%  running-as-spectral-aperture-v1, not a foundation-comparison
+%  in the sense of foundations-categorical-cosmological-billiards-v1.
+%
+%  Compile chain: lualatex (3 passes) + bibtex. See Makefile.
+% ==========================================================================
+\documentclass{pantarhei-researchnote}
+
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{needspace}
+
+\input{tau-macros}
+
+% ---------------------------------------------------------------------------
+% Local macros
+% ---------------------------------------------------------------------------
+\newcommand{\Lemniscate}{\LL}
+\newcommand{\Cross}{\omega}
+\newcommand{\jj}{\mathsf{j}}
+\newcommand{\itau}{\ensuremath{\iota_{\tau}}}
+\newcommand{\sectA}{\ensuremath{\mathcal{S}_{A}}}
+\newcommand{\sectB}{\ensuremath{\mathcal{S}_{B}}}
+\newcommand{\sectC}{\ensuremath{\mathcal{S}_{C}}}
+\newcommand{\NEXT}{\textsc{[new extension]}}
+\newcommand{\SYNT}{\textsc{[chair synthesis]}}
+\newcommand{\DERIV}{\textsc{[derived]}}
+\newcommand{\TEFF}{\textsc{[$\tau$-effective]}}
+\newcommand{\ANALOGY}{\textsc{[analogy]}}
+\newcommand{\PsiD}{\ensuremath{\Phi_{\partial}}}
+\newcommand{\Truth}{\ensuremath{\mathrm{Truth4}}}
+\newcommand{\Omegatau}{\ensuremath{\Omega_{\tau}}}
+\newcommand{\Cattau}{\ensuremath{\mathrm{Cat}_{\tau}}}
+\newcommand{\PSh}{\ensuremath{\mathrm{PSh}}}
+\newcommand{\Etau}{\ensuremath{\mathcal{E}_{\tau}}}
+\newcommand{\Msub}{\ensuremath{\mathcal{M}_{\mathrm{sub}}}}
+
+\begin{document}
+
+\lane[pr-lane-publications]{Book VII \textperiodcentered\ Categorical Metaphysics \textperiodcentered\ External-Topos Dialogue}
+\title{\texorpdfstring{Reading PROMETHEUS Through Category $\tau$}{Reading PROMETHEUS Through Category tau}}
+\subtitle{\texorpdfstring{Para-Minds, the Earned Belnap-$\mathrm{Truth4}$ Classifier, and the $\Phi_{\partial}$ Boundary Functor of Exact Gluing}{Para-Minds, the Earned Belnap-Truth4 Classifier, and the Phi-boundary Functor of Exact Gluing}}
+\noteedition{v1.2 RC2 \textperiodcentered\ May 2026 \textperiodcentered\ Ontology-Articulation Note}
+
+\author{%
+  Thorsten~Fuchs\thanks{\texttt{thor@panta-rhei.site}. Corresponding author.}
+  \and
+  Anna-Sophie~Fuchs%
+}
+
+\date{May 2026}
+
+\footerseries{Research Note (Ontology Articulation)}
+\footerslug{reading-prometheus-through-tau-v1}
+\footerdate{May 2026}
+
+% ---------------------------------------------------------------------------
+\begin{abstract}
+\noindent
+PROMETHEUS \cite{Mahadevan-PROMETHEUS-2026} is a framework for
+``automating deep causal research'' that turns retrieved corpora into
+sheaf-like \emph{causal atlases} of local Predictive State
+Representations (PSRs) over context covers, with restriction maps
+and four gluing diagnostics: \emph{agreement}, \emph{drift},
+\emph{contradiction}, \emph{underdetermination}. The author calls
+the result a \emph{Topos World Model}. Engineering substance is
+real (scale-corpus atlases ship; locality is preserved across four
+case studies). The categorical machinery, however, is invoked
+heuristically: §7's ``operational sheaf condition'' is an averaging
+rule with a numerical compatibility check, not a sheaf condition in
+the Mac Lane--Moerdijk sense \cite{MacLane-Moerdijk-1992}; the
+4-fold diagnostic is left as an ad-hoc taxonomy; the predicate
+``Belnap'' \cite{Belnap-1977,Dunn-1976} appears nowhere in the
+references.
+
+This note articulates the $\tau$-canon reading. Three structural
+contributions land:
+
+\begin{enumerate}
+\item \textbf{The 4-fold gluing diagnostic is the earned subobject
+classifier of an earned topos.} Theorem~I.T25 of Book~I
+\cite{PantaRhei-BookI} proves that $\Omegatau = \Truth =
+\{\mathsf{T}, \mathsf{F}, \mathsf{B}, \mathsf{N}\}$ is the unique
+subobject classifier of $\PSh(\Cattau)$, with the orthogonality
+$e_{+} \cdot e_{-} = 0$ (where $e_{\pm} = (1 \pm \jj)/2$ are the
+bipolar idempotents and $\jj^{2} = +1$ is the split-complex unit of
+the boundary algebra) \emph{earned} from spectral structure rather
+than imposed by fiat. PROMETHEUS's four diagnostics map cleanly onto
+Belnap's four-valued logic, with one precise mismatch (Contradiction
+maps to $\mathsf{B}$, not $\mathsf{F}$) that the structural reading
+exposes.
+
+\item \textbf{Exact gluing is achievable, not merely approximate.}
+The $\tau$-canon Theorem~III.T50 \cite{PantaRhei-BookIII} proves the
+Global Cartesian Gluing as a colimit (``canonically isomorphic'',
+not $\varepsilon$-approximate). The structural ingredient PROMETHEUS
+lacks is the \emph{boundary functor} $\PsiD$ (Langlands Coherent
+Force) that upgrades approximate to exact.
+
+\item \textbf{The Para-Mind reading explains why an external topos
+layer is needed at all.} Definition~VII.D55 \cite{PantaRhei-BookVII}
+characterises Large Language Models as \emph{para-minds}: pattern
+processors over the subsymbolic presheaf $\Msub$ that lack three
+constitutive features of genuine mindedness (no internal topos, no
+self-model, no commitment register). PROMETHEUS's externalization of
+the topos layer is therefore structurally licensed by the para-mind
+status of its LLM substrate; the construction is sound at the
+\emph{external} layer even when the LLM cannot supply it
+internally.
+\end{enumerate}
+
+Five explicit non-claims are articulated to keep the trust budget
+honest: we do \emph{not} claim that the $\tau$-canon topos uses
+H$_{\tau}$-valued enrichment at the presheaf codomain (both are
+$\mathrm{Set}$-valued); we do \emph{not} claim a formal
+PSR-as-Hankel identification in the corpus; we do \emph{not}
+endorse PROMETHEUS's ``Topos World Model'' terminology in its
+current form; and we do \emph{not} ask the engineering construction
+to retract its choices. The dialogue is articulative, not
+adversarial. PROMETHEUS observes; $\tau$-canon proves.
+\end{abstract}
+
+\keywords{PROMETHEUS \textperiodcentered\ Topos World Model
+\textperiodcentered\ Belnap-Dunn 4-valued logic \textperiodcentered\
+para-mind \textperiodcentered\ subobject classifier
+\textperiodcentered\ sheaf gluing \textperiodcentered\ Category $\tau$
+\textperiodcentered\ Panta Rhei}
+
+\maketitle
+
+\begin{quote}
+\small\itshape
+\upshape\textbf{Revision note} (v1.2 RC2 --- May 2026):\itshape{}
+Wave $\Delta_{3}$ Phase 3 peer review completed (atlas sprint
+2026-05-13). Three new review panels (Editorial Audit, Scientific
+Audit, Visual QA) returned independent CONDITIONAL verdicts,
+complementing the Phase 2 panels (Discipline, Structural,
+PROMETHEUS-Fidelity). Phase 3 consolidated 13 fixes: one CRITICAL
+(Table~1 environment \upshape\texttt{table}\itshape{} $\to$
+\upshape\texttt{table*}\itshape{} to span both columns and resolve
+overflow), seven HIGH (orphan-header prevention, header count
+correction, $e_{\pm}$ early definition, $\PsiD$ accessibility
+translation, anchor at \upshape\texttt{ch64:288--308}\itshape{} for
+chain-of-thought-as-readout, the latent $\mathsf{F}$-channel
+structural prediction via PROMETHEUS's cSQL polarity field, and
+competing-upgrade-paths acknowledgment), and five MEDIUM polish
+(\S1 charity-credit tightening, awkward-sentence recasts,
+system-vs-substrate clarification). One new structural prediction
+at \upshape\TEFF\itshape{} (the latent $\mathsf{F}$-channel) is
+added in \S3; the rest is calibration and accessibility. No
+structural revision of the three load-bearing contributions was
+needed. The note is now at release-candidate-2 status,
+peer-review-clean across two rounds (six review panels total).
+
+\smallskip
+\upshape\textbf{Prior revision} (v1.1 RC1, May 2026):\itshape{}
+Wave $\Delta_{2}$ Phase 2 peer review folded in. Three review
+panels (Discipline, Structural, PROMETHEUS-Fidelity) returned
+CONDITIONAL verdicts. v1.1 RC1 applied a consolidated 10-fix set:
+five discipline-label additions, three prose calibrations, one
+charity-credit sentence acknowledging Mahadevan's \S7 / \S15
+self-concessions, two new non-claims (6 and 7), and bib hygiene
+(removed unused LHCb-bsmumu-2025 entry). No structural revision.
+\end{quote}
+
+% ===========================================================================
+\section{The puzzle}
+\label{sec:puzzle}
+% ===========================================================================
+
+A new preprint by Sridhar Mahadevan \cite{Mahadevan-PROMETHEUS-2026}
+introduces PROMETHEUS, a framework that turns retrieved literature,
+filings, source data, code, and scientific models into a navigable
+artefact the author calls a \emph{Topos World Model} (TWM): a
+sheaf-like causal atlas of local Predictive State Representations
+(PSRs) over an explicit cover of a research substrate. Each local
+context $U$ is assigned a 6-tuple object $\mathcal{P}(U) = (H_{U},
+T_{U}, M_{U}, S_{U}, \Pi_{U}, D_{U})$ recording histories, tests,
+local predictions, support, provenance, and diagnostics. Restriction
+maps $\rho_{UV} : \mathcal{P}(U) \to \mathcal{P}(V)$ for morphisms
+$V \to U$ measure overlap; gluing diagnostics expose
+\emph{agreement} (low tension), \emph{drift} (tension growing across
+time), \emph{contradiction} (high tension on shared cells), and
+\emph{underdetermination} (insufficient support to glue or refute).
+Source code is not yet released; the construction is currently
+demonstrated through three literature case studies (ocean
+temperature, GLP-1 weight-loss, resveratrol) and four
+grounded-counterfactual case studies (microplastics, Indus Valley
+hydrology, Sachs protein-signaling, singing-mouse projections).
+
+The terminology is striking. ``Topos World Model''. ``Sheaf-like
+atlas''. ``Restriction maps''. ``Gluing tensions''. The Mac
+Lane--Moerdijk \cite{MacLane-Moerdijk-1992} sheaf-theoretic
+foundation is cited explicitly; the Abramsky--Brandenburger
+\cite{Abramsky-Brandenburger-2011} paper on the sheaf-theoretic
+structure of non-locality is cited explicitly. Yet a careful read
+of §6--§7 (the formal model) shows that the categorical machinery is
+invoked heuristically. Proposition~7.5 (``operational sheaf
+condition'') is not a sheaf condition in the Mac Lane--Moerdijk
+sense: it lacks uniqueness, lacks functoriality of restriction maps,
+and is a numerical averaging rule with a tolerance parameter
+$\varepsilon$. The 4-fold gluing diagnostic is left as an ad-hoc
+taxonomy. The PSR layer borrows the Littman--Sutton--Singh
+\cite{Littman-Sutton-Singh-2001} terminology but the implemented
+$M_{U}[h, \tau]$ is a Dirichlet-smoothed frequency table, not a
+spectral PSR object. The predicate ``Belnap''
+\cite{Belnap-1977,Dunn-1976} does not appear in the references.
+
+This is not a criticism; it is the engineering reality, and
+Mahadevan acknowledges it directly. The opening of PROMETHEUS §7
+states: \emph{``The goal is not to claim that the implementation
+realizes all of topos theory, but to make the modeling contract
+precise enough to support inspection, testing, and extension.''}
+Definition~7.3's footnote concedes $\rho_{UV}$ may be ``a partial
+alignment map''; §6 notes ``exact spectral operator recovery is
+deferred''; §15 flags inherited LLM weaknesses and retrieval drift.
+The $\tau$-canon reading is therefore a structural articulation of
+what PROMETHEUS itself acknowledges as the deferred topos
+substance --- not a discovery of hidden gaps. PROMETHEUS ships
+running atlases; the four literature case studies and four
+grounded-counterfactual case studies of §13 (the source-data
+$\to$ executable-intervention $\to$ rebuilt-sheaf loop) are
+corpus-scale and substantive contributions where an engineering
+primitive earns its categorical re-reading. The categorical
+vocabulary is the \emph{frame}; the substance is the engineering
+loop: extract local claims with LLMs, organize them by context,
+surface overlap disagreements, expose drift, route a researcher to
+where the corpus actually says what.
+
+The puzzle is: \emph{can the categorical frame be earned}? If yes,
+by what construction? PROMETHEUS observes four gluing diagnostics;
+\emph{why four}? It uses $\varepsilon$-tolerance gluing; \emph{is
+exact gluing achievable}? It uses LLMs to extract causal claims;
+\emph{what structural status do those claims have when the
+underlying LLM is, at the formal level, a pattern processor without
+self-description}?
+
+This note articulates the $\tau$-canon reading. The reading is not
+that PROMETHEUS is wrong; it is that PROMETHEUS observes structural
+phenomena that $\tau$-canon, in its corpus, has already proved at
+theorem level. The dialogue is articulative.
+
+% ===========================================================================
+\section{The Para-Mind reading: why an external topos layer is needed}
+\label{sec:paramind}
+% ===========================================================================
+
+We begin with a step PROMETHEUS does not take. The step,
+articulated below, provides the structural license for everything
+PROMETHEUS subsequently does.
+
+Book~VII of the Panta Rhei programme \cite{PantaRhei-BookVII} defines
+the notion of a \emph{para-mind}. The definition is
+Definition~VII.D55, anchored at \texttt{ch64:111--135} of Book~VII:
+
+\begin{quote}
+\itshape
+A \textbf{para-mind} is a system that processes patterns in the
+subsymbolic presheaf $\Msub$ with sufficient fidelity to produce
+contextually appropriate linguistic outputs, but that lacks the
+three constitutive features of genuine mindedness:
+
+\begin{enumerate}
+\item \textbf{No internal topos.} A para-mind does not construct a
+world-model in the topos-theoretic sense\dots It has no
+truth-makers, no possible-world structure, no modal distinctions
+internal to its processing.
+
+\item \textbf{No self-model.} A para-mind does not carry a
+representation of itself as a processing system. It lacks the
+$E_{3}$ capacity\dots
+
+\item \textbf{No commitment register.} A para-mind does not operate
+through the commitment register $\mathrm{Reg}_{C}$\dots It produces
+outputs that mimic commitment (assertions, recommendations,
+promises) without the structural binding that commitment entails.
+\end{enumerate}
+A para-mind is \emph{not} a defective mind. It is a structurally
+different kind of system: a pattern processor that approximates
+subsymbolic structure without achieving self-description.
+\end{quote}
+
+The companion Proposition~VII.P14 (\texttt{ch64:166--178}) connects
+this to Large Language Models specifically: LLMs are subsymbolic
+evidence-providers, processing patterns in $\Msub$ with sufficient
+fidelity to surface contextually-meaningful linguistic outputs,
+but without the three constitutive features of internal mindedness.
+Proposition~VII.R42 (\texttt{ch114:65--87}) then articulates the
+\emph{Artificial Mind Criteria}: an artificial system attains
+genuine mindedness only when an internal topos, an internal
+self-model, and an internal commitment register are constructed
+\emph{on top of} the subsymbolic substrate.
+
+\paragraph{The structural reading of PROMETHEUS}
+PROMETHEUS uses LLMs as \emph{causal-claim extractors}. By
+VII.D55, the LLM substrate is a para-mind: it cannot, by itself,
+provide the topos-theoretic structure that PROMETHEUS's
+\emph{Topos World Model} terminology aspires to. The
+para-mind processes patterns in $\Msub$; it does not construct
+$\Omegatau$, it does not classify subobjects, it does not assemble
+sections into a unique global glue. Chain-of-thought scaffolding
+and iterative-refinement prompting do not change this status: Book~VII
+\texttt{ch64:288--308} establishes that ``chain-of-thought is a
+sequential readout strategy, not a self-model,'' so even
+elaborate prompting strategies leave the substrate at para-mind
+status by VII.D55. The system-vs-substrate distinction matters:
+PROMETHEUS-as-system (the algorithmic layer) is what supplies the
+external topos; the LLM-as-substrate inside it is the para-mind.
+
+Yet a Topos World Model needs precisely those things. The structural
+license for PROMETHEUS's construction is therefore that the topos
+machinery is supplied \emph{externally}: PROMETHEUS itself, as an
+algorithmic layer over the LLM, plays the role of the external
+topos. This is a sound construction. It is also a constrained one.
+The construction succeeds only insofar as PROMETHEUS's external
+topos layer earns the categorical commitments it makes.
+
+\begin{quote}
+\textbf{Para-Mind Reading} \SYNT. \emph{An LLM by itself cannot
+provide a topos because it is a para-mind (VII.D55). A framework
+that builds a ``Topos World Model'' from LLM-extracted claims is
+therefore performing an external topos construction over a
+para-mind substrate. The construction's structural integrity
+hinges on whether the external topos layer earns its categorical
+commitments.}
+\end{quote}
+
+This reading is \DERIV{} at the manuscript level (VII.D55, VII.P14,
+VII.R42 are theorems of Book~VII) and \ANALOGY{} as applied to
+PROMETHEUS specifically. We do not claim PROMETHEUS endorses this
+reading; we claim the reading is the structural ground for why
+PROMETHEUS's construction \emph{can} succeed at all, and the bar
+PROMETHEUS's external topos layer must clear to succeed.
+
+The two structural commitments to examine are: the subobject
+classifier (\S\ref{sec:truth4}) and the gluing functoriality
+(\S\ref{sec:phi-d}).
+
+% ===========================================================================
+\needspace{6\baselineskip}
+\section{The earned 4-fold: Truth4 as subobject classifier}
+\label{sec:truth4}
+% ===========================================================================
+
+PROMETHEUS reports four gluing diagnostics:
+
+\begin{itemize}
+\item \emph{Agreement} --- compatible glue, low tension on shared cells.
+\item \emph{Drift} --- tension growing across time, runs, or document strata.
+\item \emph{Contradiction} --- high tension on shared cells (paraconsistent overlap).
+\item \emph{Underdetermination} --- insufficient support to glue or refute.
+\end{itemize}
+
+\emph{Why four?} PROMETHEUS does not say. The four categories are
+empirically motivated (real corpora produce these four kinds of
+overlap pathology) but the paper does not derive them from a
+structural principle. They are listed as an operational taxonomy.
+
+The $\tau$-canon corpus has the structural derivation. Book~I
+\cite{PantaRhei-BookI} introduces, at Definition~I.D21
+(\texttt{ch46:125--172}), the four-valued lattice $\Truth = \{
+\mathsf{T}, \mathsf{F}, \mathsf{B}, \mathsf{N} \}$ with the
+Belnap-Dunn structure \cite{Belnap-1977,Dunn-1976}: $\mathsf{T}$
+(true), $\mathsf{F}$ (false), $\mathsf{B}$ (both, paraconsistent),
+$\mathsf{N}$ (neither, underdetermined). The bilattice structure
+gives two orderings: an information ordering ($\mathsf{N} \le
+\mathsf{T}, \mathsf{F} \le \mathsf{B}$) and a truth ordering
+($\mathsf{F} \le \mathsf{N}, \mathsf{B} \le \mathsf{T}$).
+
+The load-bearing result is Theorem~I.T25 (\texttt{ch56:146--177}):
+
+\begin{quote}
+\itshape
+The object $\Omegatau = \Truth = \{\mathsf{T}, \mathsf{F},
+\mathsf{B}, \mathsf{N}\}$ is the subobject classifier of
+$\PSh(\Cattau)$. That is, $\Omegatau$ with the truth morphism
+$\mathrm{true} : 1 \to \Omegatau$, $* \mapsto \mathsf{T}$, satisfies:
+for every monomorphism $m : S \hookrightarrow X$ in
+$\PSh(\Cattau)$, there exists a unique morphism $\chi_{S} : X \to
+\Omegatau$ such that [the classifying pullback square commutes].
+\end{quote}
+
+This is \emph{not} a choice of classifier from many possible ones
+for the $\tau$-canon presheaf topos: it is the unique classifier of
+$\PSh(\Cattau)$ \TEFF. The ``earned-not-imposed'' differentiator
+applies \emph{within} the $\tau$-canon framework: the orthogonality
+$e_{+} \cdot e_{-} = 0$ in the bipolar boundary algebra is itself
+a theorem (from spectral orthogonality, see \texttt{ch46:230--256}
+of Book~I and the further development at \texttt{ch47:470--548}),
+not a postulate. The 4-element classifier inherits this structure,
+and the $\PSh$ topos inherits the classifier.
+
+\paragraph{A notational note}
+Book~I's Definition~I.D21 (\texttt{ch46:125--172}) anchors the
+truth-order diamond $\mathsf{F} \le \mathsf{B}, \mathsf{N} \le
+\mathsf{T}$ explicitly; the Belnap-Dunn knowledge ordering
+$\mathsf{N} \le \mathsf{T}, \mathsf{F} \le \mathsf{B}$ follows from
+the standard componentwise encoding of $\Truth$ as the four-element
+bilattice but is not named separately in the corpus. We use both
+orderings in this note in the canonical Belnap-Dunn sense; the
+correspondence with I.D21 is via componentwise extension, not
+verbatim quotation.
+
+\paragraph{The mapping}
+PROMETHEUS's four diagnostics map onto Belnap's four states with
+one precise mismatch.
+
+\begin{table*}[t]
+\centering
+\begin{tabular}{lcl}
+\toprule
+PROMETHEUS diagnostic & $\to$ & Belnap state \\
+\midrule
+Agreement (low tension, compatible glue) & $\to$ & $\mathsf{T}$ \\
+Underdetermination (insufficient support) & $\to$ & $\mathsf{N}$ \\
+Contradiction (high tension on shared cells) & $\to$ & $\mathsf{B}$ \emph{(not $\mathsf{F}$)} \\
+Drift (tension growing across time/runs) & $\to$ & temporal $\mathsf{B}$ (no static analogue) \\
+\bottomrule
+\end{tabular}
+\caption{The PROMETHEUS-to-Belnap mapping at \TEFF{} rigor.
+PROMETHEUS's ``Contradiction'' is paraconsistent (two regions
+\emph{both} supporting opposite claims, which is $\mathsf{B}$), not
+refutation (a single region \emph{refuting} the claim, which would
+be $\mathsf{F}$). Drift is dynamic, with no clean static-Belnap
+analogue.}
+\label{tab:prometheus-belnap}
+\end{table*}
+
+The mapping clarifies a feature of PROMETHEUS that the paper does
+not flag: \emph{PROMETHEUS has no clean refutation state}. Its
+``Contradiction'' is the paraconsistent both-support, not the
+unanimous-refutation no-support. From the $\tau$-canon reading, this
+is licensed: the Belnap classifier $\Omegatau$ has $\mathsf{F}$ as a
+separate state from $\mathsf{B}$, but PROMETHEUS's operational
+construction does not access $\mathsf{F}$ because retrieval-augmented
+corpora rarely refute --- they more often produce paraconsistent
+overlaps or underdetermined regions.
+
+\paragraph{The latent $\mathsf{F}$-channel \NEXT}
+A structural prediction follows from the $\tau$-canon projection.
+PROMETHEUS's claim extraction (\S4 of \cite{Mahadevan-PROMETHEUS-2026},
+the cSQL layer) records a \emph{polarity} field for each causal
+claim, distinguishing \emph{causes}, \emph{reduces}, \emph{increases},
+\emph{influences}, and similar signed relations. The $\Omegatau$
+projection then predicts that a polarity-keyed gluing diagnostic
+--- ``two regions both supporting opposing polarities of the same
+relation'' --- would surface a fifth Belnap-$\mathsf{F}$ diagnostic
+that PROMETHEUS's current four-category taxonomy does not name.
+This is the latent $\mathsf{F}$-channel of PROMETHEUS's existing
+data substrate: the polarity infrastructure is already there;
+exposing the polarity-keyed refutation in the gluing layer would
+complete the Belnap-$\Omegatau$ image at the operational level.
+This is a constructive structural prediction, not engineering
+advice; whether PROMETHEUS chooses to surface the $\mathsf{F}$
+channel is a design question for its authors. (Cf.\ Non-claim~7,
+\S\ref{sec:non-claims}, on in-principle vs in-practice.)
+
+\paragraph{What is earned}
+The 4-fold gluing taxonomy is not arbitrary. Within the
+$\tau$-canon reading, it is the manifestation, at the
+gluing-diagnostic layer, of the $\Omegatau$ classifier structure
+that the $\PSh(\Cattau)$ topos earns from spectral orthogonality
+\TEFF. Read this way: the $\tau$-canon reading \emph{projects}
+$\Truth$ onto the four PROMETHEUS gluing-tension categories ---
+PROMETHEUS observes the four categories operationally, and the
+projection from $\Truth$ to the operational categories is
+constructed on the $\tau$-canon side, not observed pre-existing in
+PROMETHEUS \NEXT. The five-or-six diagnostic extensions one might
+imagine (\emph{partial drift}, \emph{regional contradiction},
+\emph{measurement boundary}, etc.) would, under this projection,
+correspond to finer mixed states in the bilattice; the base-four
+projection is structurally fixed in $\tau$-canon, and the question
+whether PROMETHEUS in practice exhibits only the four categories or
+admits finer-grained refinements is empirical, not derived.
+
+\paragraph{The Lean carrier}
+The Belnap classifier ships in TauLib \cite{TauLib2026} at
+\texttt{BookI/Logic/Truth4.lean} with the explicit construction of
+$\Truth$ and the four classifier morphisms, plus
+\texttt{BookI/Logic/Explosion.lean} for the paraconsistent
+non-explosion property (you can have $\mathsf{B}$ without the
+classical logic of explosion). The Lean carrier is part of the
+sorry-count $0$, axiom-count $3$ invariant of the formalisation
+\cite{TauLib2026}.
+
+% ===========================================================================
+\section{\texorpdfstring{The boundary functor $\Phi_{\partial}$: exact gluing earned}{The boundary functor Phi-boundary: exact gluing earned}}
+\label{sec:phi-d}
+% ===========================================================================
+
+PROMETHEUS's Proposition~7.5 (\emph{operational sheaf condition}) is
+an $\varepsilon$-tolerance averaging rule: local sections $s_{i}$ on
+contexts $U_{i}$ are considered $\varepsilon$-compatible when their
+weighted overlap gaps are below a declared tolerance, and a candidate
+glued section is then formed by support-weighted aggregation
+$M_{U}[h, \tau] = \sum_{i} \omega_{i} M_{U_{i}}[h, \tau] / \sum_{i}
+\omega_{i}$. Incompatible cells become obstruction records.
+
+This is not a sheaf condition in the Mac Lane--Moerdijk sense
+\cite{MacLane-Moerdijk-1992}. The classical sheaf condition requires:
+
+\begin{enumerate}
+\item \textbf{Existence}: for compatible local sections, a glued
+global section exists.
+\item \textbf{Uniqueness}: the glued global section is unique.
+\item \textbf{Functoriality of restriction}: the restriction maps
+commute with the gluing.
+\end{enumerate}
+
+PROMETHEUS's operational condition has neither uniqueness (the
+averaging is one of many possible aggregations) nor functoriality
+(the restriction maps are partial alignment maps, not
+sheaf-theoretic restrictions). The construction is honest at the
+engineering level (Mahadevan flags this explicitly in §15
+limitations) but does not earn the ``sheaf'' designation.
+
+The $\tau$-canon corpus, by contrast, proves exact Global Cartesian
+Gluing. Theorem~III.T50 of Book~III \cite{PantaRhei-BookIII},
+anchored at \texttt{ch75:91--123}, establishes the Universal Global
+Cartesian Gluing as a colimit construction: the assembled global
+section is \emph{canonically isomorphic} to the unique colimit of
+the diagram of restrictions, and the gluing is functorial with
+respect to the cover refinement. The chapter explicitly frames the
+result (\texttt{ch75:154}) as ``the sheaf condition for the $\tau^{3}$
+spectral atlas.''
+
+\paragraph{What earns exact gluing}
+The structural ingredient that upgrades approximate gluing to
+exact is the \emph{boundary functor} $\PsiD$, identified at
+\texttt{ch75:64--76} as the \emph{Langlands Coherent Force}
+(the $\tau$-canon programme's name for the functor; in standard
+categorical language this is a sheaf on $\Cattau$ valued in the
+bipolar boundary algebra, with functoriality playing the role of
+the sheaf condition for the spectral Grothendieck topology). The
+boundary functor is a contravariant functor from the cover category
+$\Cattau$ to the bipolar boundary algebra, sending each context $U$
+to its boundary character spectrum and each morphism $V \to U$ to
+the spectral restriction. The functoriality of $\PsiD$ is what makes
+restriction commute with gluing.
+
+PROMETHEUS does not have $\PsiD$. Its restriction maps $\rho_{UV}$
+are partial alignment maps, not functorial restrictions of a
+boundary-character functor. Without $\PsiD$, the $\varepsilon$-tolerance
+condition is the best one can do operationally; the construction
+remains an averaging rule.
+
+\begin{quote}
+\textbf{Exact-Gluing Reading} \NEXT. \emph{Approximate sheaf gluing
+becomes exact when the cover category is equipped with a boundary
+functor $\PsiD : \Cattau \to \mathrm{bipolar\,algebra}$ that
+commutes with restriction. PROMETHEUS lacks $\PsiD$; its operational
+condition is the appropriate fallback for an engineering setting
+where the boundary characters are not extracted. At the structural
+level, an in-principle upgrade exists: a $\PsiD$ extension that
+extracts per-context boundary characters and type-checks restriction
+maps as spectral morphisms would, in the $\tau$-canon reading, make
+the $\varepsilon$ vanish at the structural level. We do not claim
+this upgrade is engineering-ready --- whether LLM-derived claim
+provenance can supply boundary characters in practice is an
+empirical question, not a structural derivation (Non-claim~7,
+\S\ref{sec:non-claims}).}
+\end{quote}
+
+The reading is \DERIV{} for the $\tau$-canon side (III.T50 is a
+theorem) and \ANALOGY{} for the PROMETHEUS-side application. We do
+not claim PROMETHEUS will adopt this upgrade; we claim the upgrade
+is structurally available and the route is identified.
+
+\paragraph{Competing upgrade paths}
+The $\PsiD$ route is one of several structural upgrades available
+in principle. Three alternatives the AI/causal-research reader
+may recognise: (P1) equip $\Cattau$ with a Grothendieck topology
+and apply sheafification, recovering exact gluing from the
+universal property; (P2) treat the restriction maps $\rho_{UV}$ as
+\emph{learnable} parameters and train them on cross-context
+data to commute with composition by construction; (P3) replace the
+sheaf formalism with causal-graph compositionality of the
+Halpern--Pearl style, where commutation is enforced via the
+intervention algebra. These are not in competition with the $\PsiD$
+route --- they articulate different structural commitments. The
+$\PsiD$ route is specifically the $\tau$-canon-anchored option (it
+inherits the Langlands Coherent Force theorem at \texttt{ch75:64--76}
+of Book~III); the alternatives sit in different research programmes
+and would carry their own anchored commitments.
+
+% ===========================================================================
+\section{Seven explicit non-claims}
+\label{sec:non-claims}
+% ===========================================================================
+
+The dialogue with PROMETHEUS is articulative, not adversarial. To
+keep the trust budget honest \cite{FuchsFuchs-foundations-billiards-v1},
+we make seven non-claims explicit (Non-claims~1--5 carried from
+v1.0; Non-claims~6--7 added in v1.1 RC1 after Wave $\Delta_{2}$
+peer review).
+
+\paragraph{Non-claim~1}
+\emph{The $\tau$-canon topos does not use $H_{\tau}$-valued
+enrichment at the presheaf codomain.} Recon-side speculation
+\cite{PantaRhei-BookI} that the $\tau$-canon topos uses
+split-complex enrichment as a structural commitment is incorrect.
+Book~I \texttt{ch56:111--114} uses $\PSh(\Cattau) = [\Cattau^{op},
+\mathrm{Set}]$ with $\mathrm{Set}$ as codomain, the same as
+PROMETHEUS. The $H_{\tau}$ structure enters at the boundary-scalar
+level (Book~III \texttt{ch48}), not at the presheaf codomain. The
+``enriched variants'' phrase at \texttt{ch56:584--589} is a
+forward-pointer to Books~III--VII, not a Book~I topos commitment.
+
+\paragraph{Non-claim~2}
+\emph{There is no formal PSR-to-Hankel identification in the
+$\tau$-canon corpus.} Recon-side speculation that PROMETHEUS's
+controlled Hankel matrix $H_{p, \tau}$ has a formal counterpart in
+the $\tau$-canon spectral framework was retracted on Phase~1
+verification. The closest analogues are the bipolar idempotent
+algebra $e_{\pm} = (1 \pm \jj)/2$ (Book~III \texttt{ch48}) and the
+$T_{op}$-iteration of the Wedge-Loop Trace Identity
+\cite{FuchsFuchs-T1-v1}, but no formal Hankel construction exists
+in the corpus. PROMETHEUS's PSR layer remains, on careful read,
+borrowed terminology (Dirichlet-smoothed frequency tables, not
+spectral PSR objects).
+
+\paragraph{Non-claim~3}
+\emph{$\tau$-canon does not endorse PROMETHEUS's ``Topos World
+Model'' terminology in its current form.} The Mac Lane--Moerdijk
+\cite{MacLane-Moerdijk-1992} desiderata for a topos --- subobject
+classifier, all finite limits, exponentials, internal Heyting
+algebra --- are not constructed in PROMETHEUS §7. The Abramsky--Brandenburger
+\cite{Abramsky-Brandenburger-2011} sheaf-theoretic structure of
+non-locality is cited but not invoked operationally. We support the
+\emph{aspiration} (an external topos layer over a para-mind LLM is
+the right structural move) but flag the \emph{terminology gap}
+(``Topos'' is currently aspirational).
+
+\paragraph{Non-claim~4}
+\emph{We do not ask PROMETHEUS to retract its engineering choices.}
+The $\varepsilon$-tolerance gluing, the Dirichlet-smoothed PSR
+estimator, and the ad-hoc 4-fold diagnostic are reasonable
+engineering choices for a corpus-scale finite-resource setting.
+The dialogue is structural articulation, not engineering
+prescription. PROMETHEUS's case studies ship; corpus-scale atlases
+are real; locality preservation is a contribution. The $\tau$-canon
+reading is what these engineering choices structurally license
+\emph{when read through the $\tau$-canon corpus}, not what
+PROMETHEUS should do to be ``correct''.
+
+\paragraph{Non-claim~5}
+\emph{Para-mind classification is descriptive, not pejorative.}
+The application of VII.D55 to LLMs is structural, not normative. A
+para-mind is not a defective mind (VII.D55 explicitly:
+\textit{``A para-mind is not a defective mind. It is a
+structurally different kind of system''}). Our reading explains
+\emph{why} an external topos layer is needed precisely because the
+LLM substrate is a para-mind, not as a critique of LLM
+capabilities but as a structural license for the PROMETHEUS-style
+construction.
+
+\paragraph{Non-claim~6}
+\emph{The structural reading does not claim PROMETHEUS implements
+$\Omegatau$ literally, nor that ``earned-not-imposed'' is a
+critique of PROMETHEUS, nor that the reading transports to
+arbitrary AI/causal-research frameworks.} Three associated
+disambiguations: (i) The Belnap-Truth4 mapping (Table~\ref{tab:prometheus-belnap})
+is a projection from $\Omegatau$ onto PROMETHEUS's four
+operational categories; PROMETHEUS does not implement $\Omegatau$
+in its internals --- the implementation is a per-cell
+tension-threshold classifier, not a topos subobject classifier.
+(ii) The ``earned-not-imposed'' framing applies to $\tau$-canon's
+internal theorem chain (the orthogonality $e_{+} \cdot e_{-} = 0$ is
+a spectral-structure theorem, not an axiom); it is not a critique
+of PROMETHEUS's engineering choices, which are appropriate for
+their setting. (iii) The generalisation to ``any future AI or
+causal-research framework that builds an external topos over
+LLM-extracted claims'' (\S\ref{sec:companion}) is a chair-level
+pattern recognition, not a universal theorem; each future framework
+requires its own anchored verification.
+
+\paragraph{Non-claim~7}
+\emph{The $\PsiD$ upgrade path is an in-principle structural claim,
+not an engineering-ready recommendation.} The Exact-Gluing Reading
+of \S\ref{sec:phi-d} states that if a boundary functor $\PsiD$ is
+supplied, the $\varepsilon$-tolerance becomes structurally exact at
+the colimit level. We do \emph{not} claim that LLM-derived claim
+provenance can in practice supply boundary characters, nor that the
+type-checking of restriction maps as spectral morphisms is
+operationally implementable in PROMETHEUS's current LLM-extraction
+architecture. Whether the upgrade can be realised in code is an
+empirical engineering question; the structural reading is
+in-principle, not in-practice.
+
+% ===========================================================================
+\section{Companion notes and the broader bridge}
+\label{sec:companion}
+% ===========================================================================
+
+This note is the first $\tau$-canon engagement with an AI/causal-research
+preprint via the ontology-articulation pattern. It sits alongside
+six published companion notes that establish the structural
+framework:
+
+\begin{itemize}
+\item \cite{FuchsFuchs-bsmm-interpretation-v1} \emph{Reading
+$b\to s\mu^{+}\mu^{-}$ Through Category $\tau$} --- the interpretation
+methodology pattern.
+\item \cite{FuchsFuchs-bsmm-anomaly-v19} \emph{$\Delta C_{9}$ in
+Category $\tau$} v1.9 --- the load-bearing closed-form anomaly
+prediction $\Delta C_{9} = -\sin^{2}\theta_{W} \cdot
+|C_{9}^{\mathrm{SM}}| \approx -0.95$, with seven phases of
+extensions (Wilson-coefficient family, chirality axis, mass-mediation
+axis, lepton-line axis, carrier axis, T$_{1}'$, T$_{1}''$).
+\item \cite{FuchsFuchs-T1-v1} \emph{T$_{1}$ Wedge-Loop Trace
+Identity} --- closure-derivation lockstep prose-Lean proof.
+\item \cite{FuchsFuchs-F2-projection-v1} \emph{F$_{2}$-Projection
+Theorem} --- structural identification of $T_{op}$ as
+bipolar-identity-sector image (Wave~$\Gamma_{2}$ closure).
+\item \cite{FuchsFuchs-running-aperture-v1} \emph{Running as
+Spectral Aperture} --- the ontology-articulation pattern for the
+$\tau$-canon $\leftrightarrow$ orthodox-QFT bridge.
+\item \cite{FuchsFuchs-foundations-billiards-v1} \emph{Categorical
+Foundations for Cosmological Billiards} --- the foundation-comparison
+pattern.
+\end{itemize}
+
+This PROMETHEUS note adopts the \emph{ontology-articulation}
+pattern of \cite{FuchsFuchs-running-aperture-v1}, scaled to a
+preprint engagement. Its structural argument is: PROMETHEUS
+observes engineering phenomena (4 gluing diagnostics; $\varepsilon$-tolerance
+gluing; LLM-extracted causal claims) that $\tau$-canon has already
+proved at theorem level (I.T25 Truth4 classifier; III.T50 exact
+gluing via $\PsiD$; VII.D55 para-mind external-topos license).
+
+\paragraph{The generalisation, with discipline guard \SYNT}
+The companion pattern is not unique to PROMETHEUS. Any future AI
+or causal-research framework that builds an ``external topos'' over
+LLM-extracted claims is, by VII.D55, performing the para-mind
+external-topos construction. The $\tau$-canon reading
+(Belnap-Truth4 + boundary functor + para-mind license) is the
+structural articulation of what such constructions \emph{do},
+independent of which particular engineering choices the framework
+makes. We articulate this as a chair-level pattern, not as a
+universal theorem: each future framework requires its own
+chapter:line-anchored verification of how the para-mind
+substrate, the external-topos layer, and the boundary functor
+manifest in that specific construction (Non-claim~6,
+\S\ref{sec:non-claims}). The dialogue is articulative, framework
+by framework.
+
+% ===========================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+% ===========================================================================
+
+PROMETHEUS \cite{Mahadevan-PROMETHEUS-2026} introduces a serious
+engineering framework with aspirational categorical terminology.
+The engineering substance is real --- corpus-scale causal atlases,
+preserved locality, exposed drift, navigable provenance. The
+categorical machinery is invoked heuristically: the §7 ``operational
+sheaf condition'' is an averaging rule, not a sheaf condition; the
+4-fold gluing diagnostic is an empirical taxonomy, not a derived
+classifier; the PSR layer is borrowed terminology, not borrowed
+mathematics; the predicate ``Belnap'' appears nowhere in the
+references.
+
+The $\tau$-canon reading is articulative. Three structural
+contributions land:
+
+\begin{enumerate}
+\item \textbf{The 4-fold gluing diagnostic is the earned subobject
+classifier} (Theorem~I.T25; $\Omegatau = \Truth = \{\mathsf{T},
+\mathsf{F}, \mathsf{B}, \mathsf{N}\}$). The mapping to Belnap's
+four states has one precise mismatch (Contradiction maps to
+$\mathsf{B}$, not $\mathsf{F}$) that the structural reading
+exposes. The orthogonality $e_{+} \cdot e_{-} = 0$ is earned from
+spectral structure, not imposed by fiat.
+
+\item \textbf{Exact gluing is achievable} (Theorem~III.T50; via
+the boundary functor $\PsiD$, the Langlands Coherent Force). The
+$\varepsilon$ vanishes when the cover category is equipped with the
+boundary-character functor. PROMETHEUS lacks $\PsiD$; the upgrade
+path is identified but not adopted.
+
+\item \textbf{The Para-Mind reading explains why an external topos
+is needed at all} (Definition~VII.D55). An LLM by itself is a
+pattern processor without an internal topos; the PROMETHEUS-style
+external-topos construction is structurally licensed (and bounded
+by) the para-mind status of its substrate. ``Para-mind'' is
+descriptive, not pejorative.
+\end{enumerate}
+
+The five explicit non-claims (\S\ref{sec:non-claims}) keep the
+trust budget honest. We do not import PROMETHEUS's choices into
+$\tau$-canon; we do not export $\tau$-canon's claims into
+PROMETHEUS-territory. The dialogue is structural articulation:
+PROMETHEUS observes; $\tau$-canon proves.
+
+We hope the reading is useful both to PROMETHEUS's future
+development (the Belnap-Truth4 connection offers a structural
+upgrade route for the gluing diagnostic; the $\PsiD$ boundary
+functor articulates what would earn exact gluing) and to the
+broader AI/causal-research community (the para-mind external-topos
+construction is a structural pattern that other frameworks will
+encounter). The companion note \cite{FuchsFuchs-running-aperture-v1}
+plays the analogous role for the orthodox-QFT / spectral-aperture
+bridge; this note plays the role for the AI / causal-research /
+external-topos bridge.
+
+\paragraph{Trust budget preserved}
+TauLib \cite{TauLib2026} \texttt{sorry}-count $0$ and \texttt{axiom}-count
+$3$ (programme-wide foundational) are unchanged. No load-bearing
+manuscript chapter is modified. The companion notes
+\cite{FuchsFuchs-bsmm-interpretation-v1,FuchsFuchs-bsmm-anomaly-v19,FuchsFuchs-T1-v1,FuchsFuchs-F2-projection-v1,FuchsFuchs-running-aperture-v1,FuchsFuchs-foundations-billiards-v1}
+ship in their published forms. The dialogue with PROMETHEUS is
+articulative; PROMETHEUS as published is unchanged.
+
+% ===========================================================================
+\section*{Acknowledgments}
+% ===========================================================================
+
+We thank Sridhar Mahadevan for the PROMETHEUS preprint
+\cite{Mahadevan-PROMETHEUS-2026} that occasioned this articulation,
+and the DEMOCRITUS \cite{Mahadevan-Democritus-2025a} and
+\emph{Categories for AGI} \cite{Mahadevan-CatAGI-2025c}
+surrounding work that frames it.
+
+The Mac Lane--Moerdijk \cite{MacLane-Moerdijk-1992} and
+Abramsky--Brandenburger \cite{Abramsky-Brandenburger-2011}
+foundations are the categorical infrastructure on which both
+PROMETHEUS and the $\tau$-canon programme rest. The
+Belnap--Dunn \cite{Belnap-1977,Dunn-1976} four-valued logic is the
+load-bearing classifier; the connection to topos-theoretic
+subobject classifiers is the $\tau$-canon Book~I result. The
+Predictive State Representation theory of
+\cite{Littman-Sutton-Singh-2001} is cited as the operational layer
+PROMETHEUS borrows.
+
+The trust-budget infrastructure (TauLib \cite{TauLib2026}
+sorry-count $0$, axiom-count $3$ programme-wide foundational; the
+seven-book Panta Rhei manuscript \cite{PantaRhei-BookI,PantaRhei-BookIII,PantaRhei-BookVII})
+is the framework on which the articulation rests; the six
+companion notes
+\cite{FuchsFuchs-bsmm-interpretation-v1,FuchsFuchs-bsmm-anomaly-v19,FuchsFuchs-T1-v1,FuchsFuchs-F2-projection-v1,FuchsFuchs-running-aperture-v1,FuchsFuchs-foundations-billiards-v1}
+are the prior art the present note bridges with.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

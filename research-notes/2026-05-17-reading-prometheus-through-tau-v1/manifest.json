@@ -1,0 +1,71 @@
+{
+  "schema": "panta-rhei-publication-manifest-v2",
+  "id": "2026-05-17-reading-prometheus-through-tau-v1",
+  "publication_id": "rn033",
+  "publication_key": "research_notes.reading_prometheus_through_tau",
+  "type": "research_note",
+  "status": "rc2_public_release_candidate",
+  "artifact_availability": "local_pdf",
+  "generated_at": "2026-05-17T13:25:00Z",
+  "file": {
+    "path": "research-note-2026-05-17-reading-prometheus-through-tau-rc2.pdf",
+    "bytes": 185303,
+    "sha256": "ff0d5a240a69fb31137a8bf9a4cd414619c30e1c5a7d74d54980829946dbfef7",
+    "sha512": "f402ced32d35c145be194db4777c1cbacdd592c484bde43c452335b3f3edf897a7d842af116709005f0e1e8359f95062a8ef42cc1a517e2678bdab4f3eddfcef",
+    "source_website_asset_path": "site/assets/pdfs/research-notes/research-note-2026-05-17-reading-prometheus-through-tau-rc2.pdf"
+  },
+  "source": {
+    "path": "reading-prometheus-through-tau.tex",
+    "bytes": 43675,
+    "sha256": "f5a0bce8f664bb29bdc1ba8328c75d5189b61b33c12b21c31eb202484ba9749a",
+    "sha512": "dd33001078b11a9c1ba919f9661cd655f15ed9598c66f267dade5313a31b36c2805f545219b0e05100dca1e43726c8b6f56bf55b6d8ec194859a332406f36714"
+  },
+  "checksums": {
+    "sha256": "ff0d5a240a69fb31137a8bf9a4cd414619c30e1c5a7d74d54980829946dbfef7",
+    "sha512": "f402ced32d35c145be194db4777c1cbacdd592c484bde43c452335b3f3edf897a7d842af116709005f0e1e8359f95062a8ef42cc1a517e2678bdab4f3eddfcef"
+  },
+  "opentimestamps": {
+    "status": "not_created",
+    "verification": "not_applicable_for_this_sprint"
+  },
+  "publication": {
+    "title": "Reading PROMETHEUS Through Category τ",
+    "subtitle": "Para-Minds, the Earned Belnap-Truth4 Classifier, and the Φ_∂ Boundary Functor of Exact Gluing",
+    "authors": "Thorsten Fuchs and Anna-Sophie Fuchs",
+    "publication_type": "Research Note",
+    "date": "2026-05-17",
+    "version": "v1.2 RC2",
+    "status": "RC2 public release candidate",
+    "license": "CC-BY-4.0",
+    "doi": "",
+    "doi_url": "",
+    "osf_doi_pending": true,
+    "osf_doi_target_form": "10.17605/OSF.IO/XXXXX",
+    "canonical_url": "https://panta-rhei.site/publications/research-notes/reading-prometheus-through-tau/",
+    "website_url": "https://panta-rhei.site/publications/research-notes/reading-prometheus-through-tau/",
+    "pdf_filename": "research-note-2026-05-17-reading-prometheus-through-tau-rc2.pdf",
+    "source_website_page": "_research_notes/2026-05-17-reading-prometheus-through-tau.md",
+    "github_path": "research-notes/2026-05-17-reading-prometheus-through-tau-v1",
+    "artifact_availability": "local_pdf",
+    "route_status": "released",
+    "abstract": "Short ontology-articulation research note. Structural reading of the PROMETHEUS preprint (Mahadevan 2026, arXiv:2605.12835v1) through Category tau. Three structural contributions: (1) the 4-fold gluing diagnostic IS the earned subobject classifier Omega_tau = Truth4 = {T, F, B, N} (Theorem I.T25 of Book I); (2) exact gluing is achievable via the boundary functor Phi_boundary (Theorem III.T50 of Book III); (3) the Para-Mind reading (Definition VII.D55 of Book VII) explains why PROMETHEUS's external-topos construction is structurally licensed - an LLM by itself is a para-mind without an internal topos. One constructive structural prediction: PROMETHEUS's existing cSQL polarity field is the route to a fifth Belnap-F gluing diagnostic. Seven explicit non-claims keep the trust budget honest. Peer-review-clean across two rounds (six panels: Wave Delta_2 Discipline/Structural/PROMETHEUS-Fidelity plus Wave Delta_3 Editorial/Scientific/Visual).",
+    "claim_boundary": {
+      "claim": "PROMETHEUS's 4-fold gluing diagnostic structurally coincides with the earned subobject classifier Omega_tau = Truth4 = {T, F, B, N} of an earned topos PSh(Cat_tau); its epsilon-tolerance gluing is upgradable to exact gluing via the boundary functor Phi_boundary which PROMETHEUS lacks; and the external-topos construction is structurally licensed by the para-mind status of its LLM substrate. The dialogue is articulative, not adversarial.",
+      "non_claim": "Does not endorse PROMETHEUS's 'Topos World Model' terminology in its current form; does not claim that the tau-canon topos uses H_tau-valued enrichment (both use Set-valued presheaves); does not claim a formal PSR-as-Hankel identification; does not claim the latent F-channel prediction is engineering-ready; para-mind classification is descriptive, not pejorative; does not ask PROMETHEUS to retract its engineering choices."
+    },
+    "related_lanes": [
+      "publications",
+      "corpus",
+      "verify"
+    ],
+    "related_routes": [
+      "/publications/research-notes/reading-prometheus-through-tau/",
+      "/publications/research-notes/",
+      "/corpus/registry/",
+      "/corpus/taulib/",
+      "/verify/taulib/",
+      "/verify/release-manifest/"
+    ]
+  },
+  "integrity_note": "Hashes attest to the PDF bytes and release source snapshot only; they do not certify correctness, peer review, legal status, or content validity. DOI minting is pending the OSF (Open Science Framework) project creation; the programme migrated from Zenodo to OSF as the primary DOI platform on 2026-05-17."
+}

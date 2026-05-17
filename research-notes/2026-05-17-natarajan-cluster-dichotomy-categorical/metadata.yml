@@ -1,0 +1,62 @@
+publication_id: RN-032
+publication_key: research_notes.natarajan_cluster_dichotomy_categorical
+title: "The Natarajan Dichotomy as One D-Sector Readout in Two Regimes"
+subtitle: "A τ-Categorical Pre-Registration against the Natarajan, Chiang & Dutra (2026) Multiscale Cluster-Lensing CDM Crisis"
+authors:
+  - Thorsten Fuchs
+  - Anna-Sophie Fuchs
+type: Research Note
+status: v1.0 public release
+version: v1.0
+date: 2026-05-17
+program: Panta Rhei Research Program
+license: CC-BY-4.0
+website: https://panta-rhei.site/publications/research-notes/natarajan-cluster-dichotomy-categorical/
+pdf: https://panta-rhei.site/assets/pdfs/research-notes/research-note-2026-05-17-natarajan-cluster-dichotomy-categorical.pdf
+source: natarajan-cluster-dichotomy-categorical.tex
+doi: 10.5281/zenodo.20251191
+doi_url: https://doi.org/10.5281/zenodo.20251191
+zenodo_url: https://zenodo.org/records/20251191
+anchor_paper:
+  citation: "Natarajan, P., Chiang, B. T., Dutra, I., 2026, ApJL 1001, L12"
+  doi: 10.3847/2041-8213/ae53ea
+  title: "New Cold Dark Matter Crisis Revealed by Multiscale Cluster Lensing"
+tags:
+  - tau-framework
+  - cluster-lensing
+  - dark-matter
+  - cluster-substructure
+  - capacity-gradient-gravity
+  - boundary-holonomy-mass
+  - non-particle-dark-matter
+  - mond
+  - sidm
+  - natarajan-dichotomy
+  - categorical-pre-registration
+summary: >
+  This Research Note pre-registers a Category-τ reading of the cluster-substructure
+  dichotomy reported in Natarajan, Chiang & Dutra (2026, ApJL 1001, L12) as one
+  D-sector readout in two regimes, not two DM components. Three τ-distinctive
+  positive readings are committed (outer Newtonian-limit r_t; inner M∂(R)
+  number-promotion; transition r_trans = ℓ_cl,sub(M_sub)) plus one numerical anchor
+  (r_trans ≈ 3.4–10.8 kpc) and an 11-row N16 falsification surface with one
+  headline pre-registered falsifier (host-mass independence of r_trans at fixed
+  SHMF). Three derivational gaps are flagged honestly; the inner-density-slope-
+  direction tension is reframed as a count-axis-vs-slope-axis discriminator
+  in GGSL+kinematics joint inference.
+claim_boundary:
+  core: >
+    Under the τ-framework's capacity-gradient gravity sector and its boundary-
+    holonomy mass closure (V.D272), the Natarajan dichotomy is a regime-projection
+    of one D-sector readout — collisional-like inner core via M∂(R) number-
+    promotion at the host nodal-capacity maximum, collisionless-like outer
+    tidal extent via the V.D261 cluster-screening factor (1 + r/ℓ_τ ≈ 1) — with
+    a single transition scale ℓ_cl,sub(M_sub) = √(G M_sub / a₀) governed by
+    subhalo mass, not by a particle-DM cross-section.
+  non_claims:
+    - It does not derive the γ ≳ 2.5 inner density slope from existing primitives.
+    - It does not derive the SHMF amplitude (slope only).
+    - It does not derive the 5σ–40σ inner-excess amplitude (sign-correctly produced via the M∂(R) mechanism; amplitude deferred).
+    - It does not claim τ-physics is Lean-verified as external physics.
+    - It does not supersede the conjectural status of V.T203 in the KSZ-categorical note.
+    - It does not engage Natarajan, Chiang, or Dutra adversarially; the note is offered in the spirit of pre-registration, not adjudication.

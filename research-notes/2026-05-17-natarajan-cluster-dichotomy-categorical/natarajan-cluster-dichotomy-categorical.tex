@@ -1,0 +1,895 @@
+%!TEX program = lualatex
+% ==========================================================================
+%  The Natarajan Dichotomy as One D-Sector Readout in Two Regimes:
+%  A τ-Categorical Pre-Registration against the Natarajan, Chiang & Dutra
+%  (2026, ApJL 1001, L12) Multiscale Cluster-Lensing CDM Crisis.
+%
+%  Thorsten Fuchs & Anna-Sophie Fuchs
+%  Panta Rhei Research Program
+%  May 2026
+% ==========================================================================
+\documentclass{pantarhei-researchnote}
+
+\input{tau-macros}
+
+% ---- PDF metadata (arXiv preflight: merges with class-level \hypersetup) --
+\hypersetup{
+  pdftitle  = {The Natarajan Dichotomy as One D-Sector Readout in Two Regimes:
+               A tau-Categorical Pre-Registration against the Natarajan, Chiang
+               and Dutra (2026) Multiscale Cluster-Lensing CDM Crisis},
+  pdfauthor = {Thorsten Fuchs and Anna-Sophie Fuchs},
+  pdfsubject= {astro-ph.CO; cluster lensing; capacity-gradient gravity;
+               Category tau; doi:10.5281/zenodo.20251191},
+  pdfkeywords={dark matter; gravitational lensing; galaxy clusters;
+               cluster substructure; capacity-gradient gravity; Category tau;
+               categorical pre-registration; Natarajan dichotomy;
+               doi:10.5281/zenodo.20251191}
+}
+
+% ---- Note-local macros ----------------------------------------------------
+\newcommand{\Nat}{N26}                          % short anchor for Natarajan 2026
+\newcommand{\aMOND}{a_0}                        % MOND-effective acceleration scale
+\newcommand{\ellcl}{\ell_{\mathrm{cl}}}         % classical-validity scale (host)
+\newcommand{\ellsub}{\ell_{\mathrm{cl},\mathrm{sub}}}  % classical-validity scale (subhalo)
+\newcommand{\elltauv}{\ell_\tau}                % cosmological tau-length
+\newcommand{\Meff}{M_{\mathrm{eff}}}
+\newcommand{\Mpa}{M_{\partial}}                 % boundary-holonomy mass
+\newcommand{\Mp}{M_{\mathrm{p}}}                % baryonic / particle mass
+\newcommand{\Msub}{M_{\mathrm{sub}}}
+\newcommand{\Mtwohun}{M_{200}}
+\newcommand{\Rtwohun}{R_{200}}
+\newcommand{\Mpc}{\mathrm{Mpc}}
+\newcommand{\kpc}{\mathrm{kpc}}
+\newcommand{\Msun}{M_{\odot}}
+\newcommand{\Rs}{R_S}                           % Schwarzschild radius
+\newcommand{\rtran}{r_{\mathrm{trans}}}
+\newcommand{\rtid}{r_t}
+\newcommand{\rcore}{r_{\mathrm{core}}}
+\newcommand{\Pggsl}{P_{\mathrm{GGSL}}}
+\newcommand{\readout}{\textsc{[readout]}}
+\newcommand{\evstag}{\textsc{[evs]}}
+\newcommand{\bridge}{\textsc{[bridge]}}
+\newcommand{\falsifierID}[1]{\textsc{N16.#1}}
+
+\renewcommand{\arraystretch}{1.2}
+
+\begin{document}
+
+\lane[pr-lane-publications]{Categorical Macrocosm \textperiodcentered\ Book V}
+\title{The Natarajan Dichotomy as One D-Sector Readout in Two Regimes}
+\subtitle{A $\tau$-Categorical Pre-Registration against the Natarajan, Chiang \& Dutra (2026) Multiscale Cluster-Lensing CDM Crisis}
+\noteedition{May 2026}
+
+\author{%
+  Thorsten~Fuchs\thanks{\texttt{thorsten@panta-rhei.site}. Corresponding author.}
+  \and
+  Anna-Sophie~Fuchs%
+}
+
+\date{May 2026}
+
+\footerseries{Research Note}
+\footerslug{natarajan-cluster-dichotomy-categorical-v1}
+\footerdate{May 2026}
+
+% -----------------------------------------------------------------------
+\begin{abstract}
+\noindent
+Natarajan, Chiang \& Dutra~\cite{Natarajan2026} have reported a new flavour
+of cold-dark-matter (CDM) crisis from a multiscale strong+weak gravitational
+lensing analysis of three massive clusters characterised as dynamically
+relaxed in their analysis (MACS~J0416, J1206, J1149; $z = 0.39$--$0.54$;
+$\Mtwohun \sim 10^{15}\,\Msun$; J0416's dynamical state is contested in the
+broader Hubble Frontier Fields literature), compared to mass-matched
+TNG-Cluster ($\Lambda$CDM) analogs. Four substructure diagnostics yield a
+\emph{dichotomy}: the same member-galaxy subhalos must carry steep inner
+density slopes $\gamma \gtrsim 2.5$--$3$ at $r \lesssim 0.01\,\Rtwohun$
+(core-collapsed SIDM-like) \emph{and} collisionless-CDM-like outer tidal
+extents at $r \sim 10$--$100\,\kpc$. No single particle-DM microphysics
+satisfies all four.
+We pre-register a Category-$\tau$ reading of this dichotomy as
+\emph{one $D$-sector readout in two regimes}, not two DM components. Three
+$\tau$-distinctive positive readings are committed: (i) the outer tidal
+extents follow from the Newtonian-limit theorem (V.T28/V.T78) on
+tidally-pruned capacity wells at radii where the cluster screening
+factor $1 + r/\elltauv \approx 1$ (consistency check passed by construction);
+(ii) the projected inner number excess at $R/\Rtwohun \lesssim 0.2$
+($5\sigma$--$40\sigma$ in~\cite{Natarajan2026}) is sign-correctly produced
+by inner-promotion of the boundary-holonomy mass $\Mpa(R)$ in the host
+capacity well, a structurally absent quantity in TNG-C; (iii) the
+transition between regimes occurs at
+$\rtran \approx \ellsub(\Msub) = \sqrt{G \Msub / \aMOND}$ with
+$\aMOND = c H_0 \imark / 2$, predicting $\rtran \approx 3.4$--$10.8\,\kpc$
+for $\Msub \in [10^{10}, 10^{11}]\,\Msun$, in order-of-unity agreement
+with the empirical break at $r \sim 10\,\kpc$ across all three MACS clusters.
+We pre-register one headline falsifier
+(\falsifierID{3}: host-mass independence of $\rtran$ at fixed subhalo
+mass function, testable with Euclid + Rubin LSST by $\sim 2029$) and one
+structurally honest tension reframed as falsifier: the $\tau$-saturation
+family predicts \emph{flatter}, not steeper, inner density slopes
+(V.P16~\readout); the GGSL probability must therefore be matched by
+member-density (this work, R1), not density-slope, with the discriminating
+observation deferred to the future GGSL+kinematics inner-mass-content
+test. Three derivational gaps are flagged honestly for future Book V
+scaffolding: the precise $\gamma$ value, the SHMF amplitude, and the
+$5\sigma$--$40\sigma$ inner-excess amplitude.
+\end{abstract}
+
+\keywords{dark matter; gravitational lensing; galaxy clusters; cluster
+substructure; capacity-gradient gravity; Category $\tau$; categorical
+pre-registration; Natarajan dichotomy}
+
+\maketitle
+
+\begin{center}\small\noindent
+\textbf{Zenodo DOI:}\enspace
+\href{https://doi.org/10.5281/zenodo.20251191}{10.5281/zenodo.20251191}
+\enspace\textbar\enspace
+arXiv\,(astro-ph.CO\,+\,astro-ph.GA) mirror pending category endorsement
+\end{center}
+\vspace{0.5em}
+
+
+% -----------------------------------------------------------------------
+\section{Why this paper}\label{sec:why}
+
+The Natarajan~et~al.\ (2026) CDM-crisis paper~\cite{Natarajan2026} differs
+from prior small-scale tensions in two respects that matter for any
+non-particle response.
+
+\paragraph{Observational robustness.} The $5\sigma$--$40\sigma$ inner
+projected substructure excess at $R/\Rtwohun \lesssim 0.2$ survives the
+authors' $10^6$-iteration bootstrap injection of force-resolution-disrupted
+inner subhalos (their Appendix~B), and the order-of-magnitude tension in
+GGSL probability $\Pggsl$ persists under varied baryonic-feedback
+prescriptions (their~\S{}9.3, citing
+\cite{Meneghetti2020,Meneghetti2023,Ragagnin2022,Heinze2024}).
+This is not a marginal anomaly within a noisy substructure inventory; it is
+a stress test of $\Lambda$CDM at the dense-cluster intermediate-redshift
+regime, performed under maximal $\Lambda$CDM-favourable conditions
+(TNG-Cluster, baryonically self-consistent, force-disruption-aware).
+
+\paragraph{Structural distinctness.} Unlike the missing-satellites or
+cusp--core problems, the Natarajan tension demands that the \emph{same}
+subhalo host two mutually exclusive microphysical signatures:
+\emph{collisional-like} inner density slopes
+($\gamma \gtrsim 2.5$--$3$ at $r \lesssim 0.01\,\Rtwohun$,
+core-collapsed SIDM regime) and \emph{collisionless-like} outer tidal
+extents ($\rtid$ at $r \sim 10$--$100\,\kpc$, consistent with NFW dynamical
+friction). No single self-interaction cross-section
+$\sigma/m$ satisfies both~\cite{Natarajan2026}~\S{}10.
+
+\paragraph{Open door to non-particle alternatives.}
+The authors~\cite{Natarajan2026}~\S{}10 explicitly foreclose the
+conventional SIDM resolution --- a sophisticated structural commitment
+we gratefully acknowledge --- in concert with the
+Chiang+2026b~\cite{ChiangSimResolution2026} companion analysis, and
+nominate either a hybrid CDM+SIDM model or \emph{``entirely new classes
+of DM theories''} as candidate resolutions. This opens the response
+landscape to non-particle frameworks --- where the present Panta Rhei
+Programme is already positioned via the Category-$\tau$ no-particle-DM
+commitment of~\cite{KSZCategorical} (cluster-scale lensing without
+particle dark matter, V.T213 universality at $\Meff/\Mp \le 6.65$).
+A Category-$\tau$ note can therefore engage substantively, with cluster-scale
+precedent already in the public corpus, and without competing inside the
+saturating SIDM-core-collapse debate.
+
+What follows is a categorical pre-registration in the
+KSZ~\cite{KSZCategorical} and LRD-v3.3~\cite{LRDCategoricalv33} style:
+three $\tau$-distinctive positive readings, one numerical anchor, one
+headline falsifier, three pre-registered gaps, and one structurally
+honest tension reframed as falsifier.
+
+\section{The \texorpdfstring{$\tau$}{tau}-position in one line}\label{sec:tau-position}
+
+\paragraph{No particle DM.} The Panta Rhei Programme commits to a
+capacity-gradient framework in which dark-matter phenomenology is a
+projection artefact of the categorical $D$-sector readout, not a particle
+species. The framing was pre-registered against the Gallardo~et~al.\
+pairwise-kSZ force-law constraint~\cite{KSZCategorical}, where the
+Newtonian-limit theorem V.T78 fixes the large-scale exponent at
+$n = 2$ (Newtonian), in tension with MOND $n = 1$.
+
+\paragraph{KSZ cluster-scale precedent (with substructure caveat).}
+\cite{KSZCategorical} commits the framework to cluster lensing
+phenomenology via the boundary-holonomy mass closure
+$\Meff/\Mp \le 6.65$ (V.D272 + V.T212~\readout), audited against a
+five-cluster universality catalogue (V.T213). That catalogue is
+\emph{four merging plus one relaxed} (Bullet, A2744, El Gordo,
+MACS~J0025; plus A1689), at total-mass per cluster, with $\pm 20$--$50\%$
+precision on integrated cluster mass only (not substructure-resolved).
+The present three Natarajan clusters are characterised as relaxed
+in~\cite{Natarajan2026}, with MACS~J0416's dynamical state contested
+in the broader HFF literature, and the observable is substructure-resolved
+at $\kpc$ scale. The KSZ V.T213
+universality is therefore inherited here only as a calibration prerequisite
+on integrated cluster mass, not as a substructure-resolved theorem.
+
+\paragraph{LRD-v3.3 format precedent.}
+The pre-registration scaffold follows~\cite{LRDCategoricalv33}, which
+attaches eight observational signatures to the heavy-seed black-hole
+birth condition at $z \approx 8$--$15$. Signature~3 of that note
+($\Meff/\Mp$ aperture-dependent saturation at LRD scales) shares its
+anchor (V.D272 + V.T213) with the present~\S\ref{sec:two-regimes} below;
+to avoid silent double-booking, the LRD coupling is disclosed in
+\falsifierID{3} of the present note (see~\S\ref{sec:falsifiers}).
+
+\paragraph{Status discipline.}
+Every $\tau$-statement on Natarajan observables in this note carries
+\readout{} (consistency reading or interpretation, not external-physics
+theorem) or \evstag{} (external-validation seam, falsifier).
+No \textsc{[formal]} or \textsc{[hinge]} claim is made on the
+$\gamma$ value, the SHMF amplitude, the $r_t$ value, or the
+$5\sigma$--$40\sigma$ amplitude. The V.T203 conjectural status
+(cluster capacity mass discrepancy, $D_\tau \sim 2$--$4$ vs.\
+$D_{\mathrm{obs}} \sim 5$--$7$~\cite{KSZCategorical} L811--814) is carried
+forward verbatim; this note does not narrow that gap, only structurally
+locates it (see~\S\ref{sec:gaps}).
+
+
+% -----------------------------------------------------------------------
+\section{Two regimes, two mechanisms}\label{sec:two-regimes}
+
+The Natarajan dichotomy presents at face value as a microphysical paradox:
+the same dark-matter sector must be \emph{collisional} in inner cores and
+\emph{collisionless} in outskirts. The categorical reading is different.
+There is one $D$-sector readout; it produces two regime-separated
+nonlinearities at the cluster-substructure scale, organized by a single
+length scale $\ellsub$ that depends on subhalo mass, not on a particle
+parameter. Inside $\ellsub$ the readout is dominated by inner promotion of
+the boundary-holonomy mass $\Mpa(R)$ in the host capacity well. Outside
+$\ellsub$ the capacity-screening factor relaxes to unity and the
+Newtonian-limit theorem governs.
+
+\paragraph{One readout, not two.}
+The categorical position is that the dichotomy is an \emph{artefact} of
+asking the question in particle-DM language. In Category $\tau$ there is
+no second component, no density-dependent cross-section, no hybrid; the
+inner and outer phenomenologies are two regime-projections of one
+underlying readout (V.D121 capacity skeleton + V.D272 boundary-holonomy
+mass closure + V.D261 cluster screening). The three subsections below
+make this concrete.
+
+\subsection{Inner regime: \texorpdfstring{$\Mpa(R)$}{M\_partial(R)} inner-promotion}\label{subsec:inner}
+
+\paragraph{Mechanism.}
+At cluster radii $R/\Rtwohun \lesssim 0.2$, the host capacity gradient is
+maximal and the boundary-holonomy mass $\Mpa(R)$ is enhanced relative to
+its outskirts value (V.D272~\readout). The capacity-skeleton population of
+sub-threshold peaks is thereby \emph{preferentially promoted} above the
+spectroscopic luminosity threshold inside this projected radius. The
+result is an excess in the projected member-galaxy count at
+$R/\Rtwohun \lesssim 0.2$ relative to a $\Lambda$CDM expectation that
+carries no $\Mpa$ at all (the TNG-Cluster suite,~\cite{NelsonTNGC2024},
+solves only the standard $\Lambda$CDM Einstein--Boltzmann system; the
+boundary-holonomy contribution is structurally absent).
+
+\paragraph{Why this is sign-correct.}
+$\Lambda$CDM substructure suffers numerical disruption inside $\sim 0.2
+\Rtwohun$ even after Hopkins-style force-resolution-free reanalysis
+(see~\cite{Natarajan2026} App.~B and~\cite{Hopkins2023,
+ChiangTNGC2026}); the resulting simulated radial distribution carries
+a residual inner \emph{dearth}, not an inner excess. The Category-$\tau$
+direction is opposite: $\Mpa(R)$ inner-promotion concentrates the readout
+inward. The amplitude is not derivable from existing primitives
+($\Mpa(R)$ functional form deferred to a future Book V cluster-interior
+module); the \emph{direction} is structurally guaranteed by V.D272
+boundary-holonomy enhancement at the cluster nodal-capacity maximum.
+
+\paragraph{V.T203 conservation.}
+The V.T203 conjectural status~\cite{KSZCategorical} L811--814
+(cluster capacity mass discrepancy, $D_\tau \sim 2$--$4$ vs.\
+$D_{\mathrm{obs}} \sim 5$--$7$) governs the \emph{integrated}
+cluster-scale mass closure, not the projected radial distribution of
+peaks. The present~\S\ref{subsec:inner} therefore neither narrows nor
+inherits V.T203, but \emph{relocates} its empirical signature: the
+mass discrepancy can in principle be partially absorbed by the
+boundary-holonomy enhancement near the cluster centre, which has not
+been previously quantified.
+
+\subsection{Outer regime: Newtonian-limit on tidally-pruned capacity wells}\label{subsec:outer}
+
+\paragraph{Free consistency check.}
+At radii $r \sim 10$--$100\,\kpc$, the cluster-scale screening factor is
+\[
+  1 + \frac{r}{\elltauv} \;=\; 1 + \frac{r}{c/(H_0 \sqrt{1 - \imark})}
+  \;\approx\; 1 + (1.6\text{--}16)\times 10^{-5}
+\]
+(using the cosmological identity $\elltauv = c/(H_0\sqrt{1-\imark})
+\approx 5.48\,\mathrm{Gpc}$~\cite{KSZCategorical}, V.D261).%
+\footnote{The V.D261 entry in the corpus historically carried a unit-label
+slip (Mpc vs.\ Gpc) documented in~\cite{KSZCategorical}~\S{}6; the present
+note adopts the corrected Gpc-scale identity consistently. The dressed value
+incorporating the V.T207 $\sqrt{1-\imark}$ pre-factor lies in the range
+$5.48$--$13.0\,\mathrm{Gpc}$; the figure quoted here is the bare value
+appropriate for the screening-factor derivation. The $K_0(r/\elltauv)$
+near-field profile of V.T85 is the Yukawa-Stokes signature of a massive
+propagator ($\eta_\tau = 0$, mean-field universality class), not a marginal-RG
+inheritance --- a distinction sharpened in the Phase 13 Path C${}'$ synthesis
+and disjoint from cousin-paper marginality results.}
+The Roche-like tidal expression for subhalo truncation
+(Book~V~ch.36~\readout) therefore reduces to the standard Newtonian form
+to one part in $\sim 10^{5}$, and the predicted tidal-truncation-radius
+distribution is collisionless-CDM-like \emph{by construction}.
+Natarajan's Figure~3 (the SIDM $r_t$ distribution sits nearly an order of
+magnitude below the CDM-like observed band; the specific median
+$r_t^{\mathrm{SIDM}}/r_t^{\mathrm{CDM}} \approx 0.73$ at the $5\sigma$
+rejection level is reported in Chiang+2026a~\cite{ChiangTNGC2026}) is
+therefore matched without invoking dark-sector self-interactions; this
+is a consistency check on the dichotomy's \emph{outer} side, not a
+derivation of the specific $r_t$ value.
+
+\paragraph{What this does and does not commit.}
+This subsection commits the framework only to \emph{statistical
+consistency with CDM at outer subhalo radii}, which is identical to the
+collisionless-CDM expectation that Natarajan~et~al.\ find satisfied. It
+does not commit a value of $r_t$ for any specific subhalo, nor an
+amplitude of the $r_t$ distribution width. Those follow from the host
+density profile and orbital-pericentre distribution, which are
+external inputs to the present~\readout.
+
+\subsection{Transition scale \texorpdfstring{$\ellsub$}{l\_cl,sub}}\label{subsec:transition}
+
+\paragraph{Closed-form prediction.}
+The transition between the inner $\Mpa$-dominated regime
+(\S\ref{subsec:inner}) and the outer Newtonian-limit regime
+(\S\ref{subsec:outer}) is governed by the
+\emph{classical-validity length applied to the member subhalo's own mass}:
+\begin{equation}\label{eq:ellsub}
+  \ellsub(\Msub) \;=\; \sqrt{\frac{G \Msub}{\aMOND}},
+  \qquad \aMOND \;=\; \frac{c H_0 \imark}{2}\;\text{(V.D232)},
+\end{equation}
+where $\imark$ is the master $\tau$-constant (Book~V V.D232 in
+the capacity-gradient framework~\cite{KSZCategorical}). The host-cluster
+$\elltauv$ (Gpc scale; see above footnote) and the host-cluster classical-validity scale
+$\ellcl(\Mtwohun) \approx 1.2\,\Mpc \approx 0.45\,\Rtwohun$ are both
+\emph{outside} the inner transition; the empirically relevant length
+in the cluster-substructure context is the \emph{member} scale
+$\ellsub(\Msub)$, not the host scale.
+
+\paragraph{Numerical anchor.}
+For $\Msub \in [10^{10}, 10^{11}]\,\Msun$ (the dominant mass range of
+the Natarajan spectroscopically-confirmed member sample as tabulated
+in~\cite{Natarajan2026}~\S\S{}2--3 and Fig.~1; the underlying SHMF
+extends to $\sim 10^{13}\,\Msun$, but the spectroscopic and dynamical
+weight in the GGSL-relevant cluster-member population sits at the lower
+end),
+\[
+  \ellsub \;\in\; [3.4,\; 10.8]\,\kpc,
+\]
+in order-of-unity agreement with the empirical break at $r \sim 10\,\kpc$
+across all three MACS clusters (MACS~J0416, J1206, J1149). The match is
+\emph{categorical} (the existence and location of a transition scale,
+not its precise value): Category $\tau$ predicts a transition, $\Lambda$CDM
+and MOND predict none, and the observed break sits in the predicted
+band. The host concentration ($c$, $r_s$) dependence of $\ellsub$ is
+deferred to a closed-form derivation via the full V.D259 nonlinear
+capacity equation (a future Book~V cluster-interior module); the
+present order-of-unity match is robust to the host-$c$ variation across
+$c \in [3.5, 8]$ at the level of $\pm 0.3\,$dex.
+
+\paragraph{Distinguishability of the transition scale.}
+The closed-form~\eqref{eq:ellsub} is structurally a MOND-proxy at the
+\emph{subhalo} (member-galaxy) scale, where MOND traditionally works.
+This is \emph{not} the host-cluster scale where MOND fails the
+missing-mass test (Famaey, Pizzuti \& Saltas~\cite{Famaey2025},
+Fig.~4 of which shows residual missing mass in CLASH-sample relaxed
+clusters with central density ratio $\sim 10\times$ the gas density at
+inner $\Mpc$). The Category-$\tau$ inheritance of MOND-proxy is therefore
+regime-bounded:
+\begin{itemize}[leftmargin=1.4em,nosep]
+  \item At subhalo $\Msub \sim 10^{10}$--$10^{11}\,\Msun$:
+        $\aMOND$-scale validity holds (V.P68 + V.R175~\cite{KSZCategorical}); $\tau$ inherits the MOND-proxy
+        transition radius.
+  \item At host-cluster $\Mtwohun \sim 10^{15}\,\Msun$:
+        the validity regime is exited; the cluster-scale failure mode
+        of MOND~\cite{Famaey2025} is recovered into V.T203's
+        conjectural slot, not silently absorbed.
+\end{itemize}
+\noindent
+SIDM core-collapse predicts $r_{\mathrm{trans}}^{\mathrm{SIDM}} \propto
+(\sigma/m)^{\alpha}$ with no scaling against $\Msub$ at fixed cross-section;
+Category $\tau$ predicts $\rtran \propto \Msub^{1/2}$. The
+\emph{host-mass independence} of $\rtran$ at fixed subhalo mass function
+is the headline pre-registered falsifier (\falsifierID{3} of
+\S\ref{sec:falsifiers}).
+
+
+% -----------------------------------------------------------------------
+\section{Consistency checks passed}\label{sec:consistency}
+
+Three orthogonal Natarajan diagnostics admit Category-$\tau$ consistency
+readings at the \readout{} level.
+
+\begin{description}[leftmargin=1.7em,itemsep=0.4em]
+\item[\S{}4.1 Outer $r_t$ at $10$--$100\,\kpc$.]
+The screening factor of \S\ref{subsec:outer} reduces the Book~V ch.36 Roche
+expression to the standard Newtonian form at one part in $\sim 10^{5}$.
+The Natarajan Figure~3 SIDM-vs-CDM distribution (with the Chiang+2026a
+companion's $r_t^{\mathrm{SIDM}}/r_t^{\mathrm{CDM}} \approx 0.73$ median
+at the $5\sigma$ rejection level~\cite{ChiangTNGC2026}) is matched by
+construction. A consistency check, not a derivation of any specific $r_t$.
+
+\item[\S{}4.2 Inner member-number excess at $R/\Rtwohun \lesssim 0.2$.]
+The boundary-holonomy mass $\Mpa(R)$ inner-promotion mechanism
+(\S\ref{subsec:inner}) produces a sign-correct concentration at small
+projected radii. The Natarajan Figure~2 $5\sigma$--$40\sigma$ excess is
+matched in direction; amplitude is deferred (G3 in~\S\ref{sec:gaps}).
+The F1-wave $\Mpa(R)$ structural-closure analysis (Phase~12, V.D352 +
+V.T348~\cite{Natarajan2026} cross-reference) predicts a $\tau$-side
+inner-excess band consistent with the \emph{inner half} of the Natarajan
+band ($\sim 5\sigma$--$20\sigma$), with the high-tail residual
+($\gtrsim 30\sigma$) plausibly absorbing into the slope-axis
+contribution that the V.D272 inner-promotion mechanism cannot supply.
+TNG-Cluster~\cite{NelsonTNGC2024} cannot reproduce this structurally
+because the underlying Einstein--Boltzmann system carries no
+$\Mpa(R)$ contribution; the $5\sigma$--$40\sigma$ residual survives
+the $10^6$-iteration Hopkins-style bootstrap correction in
+Natarajan~Appendix~B~\cite{Natarajan2026,Hopkins2023}, so the
+force-resolution-loss escape hatch is already closed by the source
+analysis before the $\tau$-mechanism is invoked. Count-axis and
+slope-axis contributions are partially degenerate at present
+single-cluster precision; the count-vs-slope joint inference roadmap
+is~\S\ref{sec:gaps} G1.
+
+\item[\S{}4.3 Transition scale $\rtran \approx 3.4$--$10.8\,\kpc$.]
+The closed-form $\ellsub$ of~\eqref{eq:ellsub} matches the empirical break
+at $r \sim 10\,\kpc$ across the three MACS clusters to order unity, for
+the $10^{10}$--$10^{11}\,\Msun$ subhalo mass range that dominates the
+spectroscopically confirmed sample. The Natarajan~\S{}7 inner-density
+transition and~\S{}8 outer truncation-radius transition share this
+single length scale.
+\end{description}
+
+
+% -----------------------------------------------------------------------
+\section{Pre-registered falsifiers (N16 surface)}\label{sec:falsifiers}
+
+We register the following falsification surface (\falsifierID{1}--\falsifierID{11})
+as the cluster-substructure $D$-sector dichotomy entry in the Panta Rhei
+falsification ledger, continuing the N9--N15 sequence from
+\cite{KSZCategorical} (N12--N14) and \cite{LRDCategoricalv33} (N15).
+Rows \falsifierID{1}--\falsifierID{8} were registered in the original
+research wave (R5 falsification-surface refinement); \falsifierID{9}
+(joint $\imark$ universality) and \falsifierID{10} ($\Mpa(R)$ radial
+shape) were added at Phase~9 (Workstream~C); and \falsifierID{11}
+(concentration-dependent saturation radius $R_\star(c) = 1.25\,\Rtwohun/c^2$)
+was added at Phase~12 from the V.D352 + V.T348 Chern--Weil partial-domain
+holonomy structural closure.
+Each row is \evstag{} and is testable with named near-term surveys
+(Euclid, Rubin~LSST, JWST cluster-lensing follow-up, FRBs, SKA, Roman,
+CMB-S4). The headline row is \falsifierID{3}; the consistency floor is
+\falsifierID{1}.
+
+\begin{table*}[!t]
+\footnotesize
+\centering
+\renewcommand{\arraystretch}{1.15}
+\caption{N16 falsification surface — cluster-substructure $D$-sector
+dichotomy entry. Rows \falsifierID{1}--\falsifierID{8} originate from the
+R5 falsification-surface refinement; \falsifierID{9}--\falsifierID{10}
+were added at Phase~9 (Workstream~C); \falsifierID{11} was added at
+Phase~12 from the V.D352~+~V.T348 Chern--Weil partial-domain holonomy
+structural closure. Every row is \evstag{}.}
+\label{tab:n16}
+\begin{tabular}{@{}p{0.6cm} p{4.8cm} p{3.6cm} p{1.6cm} p{2.6cm} p{1.7cm}@{}}
+\toprule
+ID & Prediction & $\tau$ & CDM & SIDM core-collapse & MOND \\
+\midrule
+\falsifierID{1} & Outer $r_t$ at 10--100~$\kpc$ NFW-Roche-like
+  & match\,(\S{}4.1)
+  & match
+  & $\sim 10\times$ smaller
+  & ambiguous \\
+\falsifierID{2} & Inner $R/\Rtwohun \lesssim 0.2$ \emph{number} excess
+  & match\,(\S{}4.2); $5$--$7\times$, $5\sigma$--$20\sigma$ band
+  & dearth (TNG-C)
+  & dearth
+  & no prediction \\
+\falsifierID{3} & \textbf{Host-mass independence of $\rtran$ at fixed SHMF}
+  & $\rtran \propto \Msub^{1/2}$ \emph{(headline)}
+  & no $\rtran$
+  & $\propto (\sigma/m)^{\alpha}$
+  & wrong scale \\
+\falsifierID{4} & Transition $\rtran \approx \ellsub \approx 3.4$--$10.8~\kpc$
+  & match\,(\S{}4.3, \eqref{eq:ellsub})
+  & no $\rtran$
+  & $\Msub$-independent
+  & host-scale, not subhalo-scale \\
+\falsifierID{5} & SHMF slope $dn/d\Msub \propto \Msub^{-1.9}$
+  & slope $\sim -2$ (capacity peaks);
+    $A_\tau/A_{\rm TNG-C} \in [0.5, 1.5]$ per V.T213 floor
+  & match
+  & suppressed at low $\Msub$
+  & no prediction \\
+\falsifierID{6} & Cluster-scale missing-mass profile within central 1~Mpc
+  & V.T203 conjectural slot~\cite{KSZCategorical}
+  & full match
+  & residual
+  & $\sim 10\times$ gas, inner core~\cite{Famaey2025} \\
+\falsifierID{7} & FRB scintillation: cluster sightlines through $\Mpa$ peaks
+  & dispersion-measure bumps where $\Mpa(R)$ peaks
+  & smooth
+  & smooth
+  & no prediction \\
+\falsifierID{8} & GGSL probability scaling with $\Msub$
+  & member-density dominated
+  & low (dearth)
+  & slope-dominated (cusp)
+  & no prediction \\
+\falsifierID{9} & \textbf{Joint $\imark$ universality across LRD + cluster samples}
+  & shared pre-factor $\imark = 2/(\pi+e) \approx 0.341$ at both
+    LRD aperture-saturation and cluster $\Mpa(R)$
+  & no relation
+  & no relation
+  & no relation \\
+\falsifierID{10} & Radial-shape discriminator on $\Mpa(R)$
+  & shape between $1/R$ and $1/R^3$ inside $\Rtwohun$
+  & no $\Mpa$
+  & no $\Mpa$
+  & no $\Mpa$ \\
+\falsifierID{11} & Concentration-dependent saturation radius
+    $R_\star(c) = 1.25\,\Rtwohun/c^2$
+  & $R_\star/\Rtwohun \in [0.02, 0.10]$ for $c \in [3.5, 8]$;
+    derived from NFW partial-domain Chern--Weil
+  & no $\Mpa$
+  & no $\Mpa$
+  & no $\Mpa$ \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\paragraph{Headline: \falsifierID{3}, host-mass independence of $\rtran$.}
+The discriminating prediction is the cluster-mass dependence of the
+transition radius. Category $\tau$ predicts $\rtran \propto \Msub^{1/2}$
+with no explicit host-mass scaling at fixed subhalo mass function; SIDM
+predicts $\rtran \propto (\sigma/m)^\alpha$ (subhalo-mass-independent at
+fixed cross-section); CDM predicts no transition at all; MOND predicts
+the wrong scale at the host mass.
+The test requires a sample of $\gtrsim 30$ massive lensing clusters
+with strong+weak lensing and substructure-resolved inner profiles
+(consistent with the Meneghetti~+2020 / Despali~+2017 survey-forecast
+standard~\cite{Meneghetti2020}; a tighter band-comparison $\chi^2$
+formulation may reduce this to $\sim 20$ in a future power-calculation
+pass, but the conservative figure stands here); \falsifierID{9} adds
+$\sim 50$ SLACS-class galaxy-scale lenses plus $\sim 30$ LRD lenses on
+top, with the shared $\imark$ parameter delivering a tighter joint
+constraint than any single survey delivers alone. The Euclid wide
+survey plus Rubin LSST Year-2~\cite{EuclidRedbook2024,RubinLSST2025}
+deliver the first sub-sample by 2027--2029; the full headline test
+also requires JWST + Roman kpc-resolved $\gamma(r)$ stacking on the
+2028--2030 horizon, not Euclid+LSST alone.
+
+\paragraph{Consistency floor: \falsifierID{1}, outer $r_t$.}
+The Roche-like tidal extents at $r \sim 10$--$100\,\kpc$ are matched by
+construction in Category $\tau$ (\S\ref{subsec:outer}); the Natarajan
+inference here is therefore \emph{consistent}, not predictive. This row
+survives even if all other R-wave outcomes degrade to negative results.
+
+\paragraph{V.D272 / V.T213 coupling disclosure and $\imark$ joint-prediction lock.}
+\falsifierID{3} and \falsifierID{6} share their boundary-holonomy mass
+anchor (V.D272) with~\cite{LRDCategoricalv33}~Signature~3, which
+attaches the same anchor to aperture-dependent saturation at LRD scales.
+The coupling is \emph{quantitative}: both the LRD signature-3 $6.65$
+saturation ceiling and the cluster-inner $\Mpa(R)$ amplitude in
+\falsifierID{2}/\falsifierID{4} depend on the same $\tau$-master-constant
+pre-factor $\imark = 2/(\pi+e) \approx 0.341$ via V.D272. The two predictions
+are therefore \emph{not independently falsifiable}: a single $\imark$
+parameter generates two empirical signatures on different observables,
+giving a positive consistency check at the cost of joint exposure
+(\falsifierID{9}). Any null result on the LRD-side SLACS-saturation
+prediction propagates immediately to a tension on the present
+$\Mpa(R)$-based inner-promotion; conversely, any aperture-independent
+$\Mpa(R)$ measurement would falsify both predictions jointly and force
+a structural revision of V.D272. This coupling is disclosed here per
+the R4 conservatism ledger and the F5 falsification-surface refinement.
+
+\paragraph{Row-independence audit.}
+The eleven N16 rows span approximately five independent physical axes,
+not eleven. The intra-N16 couplings are: \falsifierID{3} $\leftrightarrow$
+\falsifierID{4} (both anchored on $\rtran = \ellsub$; a null on
+\falsifierID{4} cascades to \falsifierID{3}); \falsifierID{2}
+$\leftrightarrow$ \falsifierID{7} $\leftrightarrow$ \falsifierID{10}
+(all anchored on $\Mpa(R)$ inner-promotion; a null on \falsifierID{2}
+propagates to \falsifierID{7} and \falsifierID{10}); \falsifierID{11}
+$\leftrightarrow$ \falsifierID{10} (both probe $\Mpa(R)$ radial shape).
+The shared $\imark$ pre-factor across \falsifierID{2}, \falsifierID{4},
+\falsifierID{6}, \falsifierID{9} (V.D272 + LRD-S3 joint lock above) is
+the cross-program coupling. Net: the eleven rows resolve to roughly
+\emph{five independent axes} — transition scale, $\Mpa(R)$ inner-promotion,
+SHMF slope/amplitude, V.T203 cluster mass discrepancy, and FRB
+scintillation. The shared $\imark$ joint exposure is, equivalently, a
+\emph{joint parameter constraint}: a future $\sim 50$-SLACS +
+$\sim 30$-LRD + $\sim 30$-cluster joint fit on $\imark$ is a tighter
+single-parameter constraint than any single survey delivers.
+
+\paragraph{Timeline tiers.}
+First decisive data per row: 2026--2028 (JWST cluster-lensing follow-up
+of Frontier-Fields and CLASH targets via the BUFFALO, MAGNIF, CANUCS,
+and GLASS-JWST programs); 2027--2029 (Euclid wide survey plus Rubin
+LSST Year-2 first sub-sample); 2028--2030 (full Euclid + LSST + JWST +
+Roman + FRB cluster sightlines); 2035+ (SKA, Roman wide,
+CMB-S4).
+
+
+% -----------------------------------------------------------------------
+\section{Honest gaps and the structurally honest tension}\label{sec:gaps}
+
+The wave that produced this note (\texttt{research-wave/02-R1\ldots R5})
+explicitly closed two of the three binding gaps from the
+prior red-team triage at the partial level (direction-and-mechanism),
+and produced one numerical anchor (\eqref{eq:ellsub}). It also returned
+one principled negative finding that we now reframe as a falsifier.
+
+\paragraph{G1 — inner $\gamma$ value (R2 NEGATIVE; reframed).}
+The natural candidate mechanism for steep inner cusps in
+Category $\tau$ was the \emph{saturation family} of Book V
+(V.T36, V.D57, V.P16, V.T117). On re-inspection the family is
+\emph{structurally anti-cusp}: V.P16 explicitly replaces every
+configuration that would otherwise produce a general-relativistic
+density singularity with bounded density. The Schwarzschild-radius
+scale $\Rs(\Msub \sim 10^{11}\,\Msun) \sim 10^{-8}\,\kpc$ is 4--7
+decades below Natarajan's target $r \lesssim 0.01\,\Rtwohun \approx
+1$--$10\,\kpc$, so the saturation-replaces-singularity construction is
+geometrically inert at the relevant scale. The V.T117 saturation
+radius is a \emph{cosmological motif-saturation} length
+($\sim 100\,\Mpc$ scale), not a kpc-scale halo-core radius.
+The V.D305 fiber-holonomy primitive cited by triage agent A1 as a
+candidate cross-context primitive turns out to be the BBN $^7$Be
+radiative-capture correction (module
+\texttt{BookV.Cosmology.BBNNuclearNetwork}), not a saturation
+primitive; the actual Wave-R7 LRD-1 heavy-seed derivation uses
+V.D-LRD-1d, V.T88, V.T108, V.T110 plus $\Pi_{\mathrm{coh}}$
+(\cite{LRDCategoricalv33}), all rotational/threshold mechanisms with
+no density-slope crossover.
+\smallskip\noindent
+The categorical conclusion is that
+\emph{Category $\tau$ predicts \textbf{flatter}, not steeper, inner
+density slopes at $r \lesssim \kpc$ in cluster subhalos}, on the
+\emph{opposite} side of Natarajan's parametric $\gamma \gtrsim 2.5$
+dPIE inference (whose direct empirical anchor is Dutra et~al.\
+2025~\cite{Dutra2025}, $\gamma \sim 2.9$ across three relaxed MACS clusters)
+from SIDM core-collapse.
+\smallskip\noindent
+\textbf{Reframe as a conditional discriminating observation
+(\emph{not} a dissolution of G1).} The GGSL probability $\Pggsl$ is
+sensitive to the inner mass distribution \emph{integrated} along the
+line of sight; it carries contributions from \emph{two distinct axes}
+that are partially separable in joint GGSL+kinematics inference (the
+prototype technique is Granata et~al.\ 2022~\cite{Granata2022}'s MUSE+HST
+joint strong-lensing + member-velocity-dispersion modelling on
+MACS~J0416, with current state-of-the-art HFF/CLASH lens models in
+Bergamini et~al.\ 2023~\cite{Bergamini2023}):
+
+\begin{description}[leftmargin=1.7em,itemsep=0.3em]
+\item[Count axis.] The number and spatial concentration of
+member-galaxy subhalos providing GGSL targets. Category $\tau$
+addresses this axis sign-correctly via the $\Mpa(R)$ inner-promotion
+mechanism (\S\ref{subsec:inner}).
+\item[Slope axis.] The per-subhalo inner density profile $\gamma$. SIDM
+core-collapse addresses this axis by steepening; Category $\tau$
+predicts \emph{flatter}, not steeper, slopes via V.P16. Importantly,
+Tokayer~et~al.~(2024)~\cite{Tokayer2024} already exhausted the
+\emph{count-axis-only} approach via intra-cluster baryonic mass
+rearrangement and found it insufficient to match the observed
+$\times 3.5$--$\times 8$ $\Pggsl$ boost in Natarajan~\S{}7. Thus the
+$\tau$-readout cannot dissolve G1 as a category error; the slope axis
+is empirically required to be \emph{somewhere}, and the conditional
+question is where.
+\end{description}
+
+\noindent
+The discriminating test, as a conditional:
+\begin{quote}\itshape\readout
+At fixed inferred $\Pggsl$, does the GGSL+inner-mass-content joint
+inference attribute the signal predominantly to count axis ($\tau$ via
+$\Mpa(R)$ inner-promotion) or to slope axis (SIDM core-collapse with
+$\gamma \gtrsim 2.5$)? If predominantly count axis,
+Category $\tau$ matches without invoking a steep inner slope; if
+predominantly slope axis, $\tau$ requires the deferred metric-sector
+progenitor of \S\ref{sec:gaps} (V.P144 + V.D123 trace-projection;
+program-level open item) before answering. Galaxy-scale corroboration of
+core-collapsed compact substructure is independently emerging outside
+the cluster regime (Vegetti et~al.\ 2026 on JVAS~B1938+666 via
+VLBI~\cite{Vegetti2026}; Powell et~al.\ 2025 via ALMA~\cite{Powell2025}),
+which Natarajan~et~al.\ \S{}10 cite as cross-context evidence; the
+present note remains cluster-scale-only. Future JWST cluster-lensing
++ kinematic IFU follow-up will discriminate (BUFFALO, MAGNIF, CANUCS,
+GLASS-JWST programs are the near-term anchor; $\sim 2028$--$2030$ horizon).
+\end{quote}
+
+\paragraph{G2 — SHMF amplitude (R1 PARTIAL).}
+The slope $\sim -2$ of the cluster member-galaxy capacity-peak abundance
+follows from peak statistics of the CMB/BAO-constrained Gaussian random
+field over the underlying capacity field (R1 derivation, ~\readout); the
+recovered slope agrees with the Natarajan-observed $dn/d\Msub \propto
+\Msub^{-1.9}$ to within slope uncertainty. The \emph{amplitude} of the
+SHMF is not derivable from existing primitives. Flagged for future
+Book V cluster-interior scaffolding.
+
+\paragraph{G3 — inner-excess amplitude (R1 PARTIAL).}
+The sign-correct inner concentration of member counts at $R/\Rtwohun
+\lesssim 0.2$ via $\Mpa(R)$ inner-promotion (\S\ref{subsec:inner})
+is structurally guaranteed; the $5\sigma$--$40\sigma$ \emph{amplitude}
+is not derivable from existing primitives. Flagged for future Book V
+scaffolding.
+
+\paragraph{Pre-registration discipline.}
+The three gaps above are \emph{not} promised against existing primitives.
+A future Book V module --- tentatively ``Cluster Member Distribution from
+the Capacity Skeleton with Boundary-Holonomy Inner Promotion'' --- would
+close G2 and G3 simultaneously; closing G1 requires a genuinely new
+\emph{boundary-holonomy radial-steepening} mechanism distinct from both
+V.D272 inner-promotion (which is a number-density mechanism) and the
+saturation family (which is structurally anti-cusp). Such mechanism, if
+it exists, would lift this note to the deferred F3 form factor. As of
+the present authoring it does not exist in the published $\tau$-corpus,
+and the structurally honest position is to commit to G1's reframe-as-falsifier rather than to scaffold a new primitive on demand.
+
+
+% -----------------------------------------------------------------------
+\section{Distinguishability statement}\label{sec:distinguish}
+
+Category $\tau$ is structurally distinct from every active alternative on
+the Natarajan landscape:
+
+\begin{description}[leftmargin=1.7em,itemsep=0.3em]
+\item[CDM (collisionless).] Same outer $r_t$ prediction by construction
+(\S\ref{subsec:outer}); different inner mechanism --- CDM has no
+$\Mpa(R)$ and predicts the observed \emph{dearth}, not excess; no
+transition scale.
+\item[Constant-$\sigma$ SIDM.] Different mechanism --- saturation
+(anti-cusp) vs.\ collisional steepening; opposite $\gamma$-direction
+(\S\ref{sec:gaps} G1); transition scale parameter dependence:
+$(\sigma/m)$ vs.\ $\Msub^{1/2}$ (\falsifierID{3}).
+\item[Velocity-dependent SIDM.] Same as constant-$\sigma$ on the
+$\Msub$-vs-$\sigma/m$ scaling discriminator \emph{up to a residual
+$v_{\rm disp}(\Msub)$ running} via the Rutherford-like cross-section of
+Yang \& Yu 2022~\cite{YangYu2022} adopted in Nadler et~al.\ 2025; this
+running is much weaker than $\Msub^{1/2}$ and carries the
+\emph{opposite sign} in the mildly-collisional regime (smaller subhalos
+have lower $v_{\rm disp}$, hence larger effective $\sigma/m$, hence
+\emph{earlier} core-collapse and smaller $\rtran$). The mildly-collisional
+long-lasting core-phase mechanism of Errani et~al.\
+2023~\cite{Errani2023} is what closes Natarajan~\S{}8's vel-dep escape
+hatch. The \falsifierID{3} discriminator therefore survives against
+vel-dep SIDM, but the foil is not identical to constant-$\sigma$.
+Same as constant-$\sigma$ on the cusp/anti-cusp $\gamma$-direction
+discriminator. Outer $r_t$-truncation tighter than CDM in vel-dep
+cross-section models~\cite{Nadler2025}; Category $\tau$ predicts CDM-like
+by construction.
+\item[MOND.] V.T78 force-law exponent $n = 2$ vs.\ MOND $n = 1$;
+$\aMOND$-scale validity regime-bounded
+(\S\ref{subsec:transition}): inherited at subhalo $\Msub \sim
+10^{10}$--$10^{11}\,\Msun$, exited at host $\Mtwohun \sim 10^{15}\,\Msun$
+where MOND fails the cluster-mass test~\cite{Famaey2025}. Category $\tau$
+does \emph{not} invoke a universal $\aMOND$ across all scales; the
+$\ellsub$ length \emph{is} a $\sqrt{G\Msub/\aMOND}$ expression but with
+$\aMOND$ a derived constant from the cosmological capacity-gradient
+framework (V.D232, V.P68, V.R175~\readout), not a postulate.
+\item[Hybrid CDM+SIDM.] Ontologically distinct --- one $D$-sector, no
+second component, no density-dependent cross-section
+(\S\ref{sec:two-regimes}). Observationally distinct on
+\emph{host-concentration} dependence of $\rtran$: hybrid CDM+SIDM
+still carries a density-dependent transition (slope axis activates
+inside $\rho_{\rm crit}$), giving a $\rtran$ that depends on host
+concentration $c$ at fixed $\Msub$; Category $\tau$'s $\rtran \propto
+\Msub^{1/2}$ scaling carries no explicit host-$c$ dependence. The two
+are discriminable in a $\sim 30$-cluster sample across the
+$c \in [3.5, 8]$ range of relaxed CLASH/HFF cluster lenses.
+\item[Verlinde / MOG.] Different mechanism class --- Category $\tau$
+inherits the Newtonian $n = 2$ force law from V.T78~\cite{KSZCategorical},
+not entropic gravity or Yukawa-modified gravity; no parametric
+free parameter to tune against cluster lensing.
+\end{description}
+
+\noindent
+The minimum testable distinguishability set within the
+\falsifierID{1}--\falsifierID{11} surface (\S\ref{sec:falsifiers}) is
+\falsifierID{3} (Category $\tau$ uniquely predicts host-mass
+independence of $\rtran$ at fixed SHMF) plus \falsifierID{2}
+($\Mpa(R)$ inner-promotion produces excess; all four alternatives
+produce dearth or no prediction). Combined, these two rows form a
+minimum-cluster-sample-size discriminator of $\sim 30$ massive
+clusters at strong+weak lensing precision, which Euclid+LSST will
+deliver by $\sim 2029$.
+
+
+% -----------------------------------------------------------------------
+\section{Status discipline}\label{sec:status}
+
+Every $\tau$-claim in this note is tagged \readout{} or \evstag{}; no
+\textsc{[formal]} or \textsc{[hinge]} claim is made on the Natarajan
+empirical observables. The section-to-tag mapping is given in
+Table~\ref{tab:status-mapping}.
+
+\begin{table}[!h]
+\footnotesize
+\centering
+\renewcommand{\arraystretch}{1.15}
+\caption{Status-tag mapping (\readout{} = consistency reading / interpretation;
+\evstag{} = external-validation seam / falsifier).}
+\label{tab:status-mapping}
+\begin{tabular}{@{}p{2.6cm} p{3.3cm} p{0.9cm}@{}}
+\toprule
+Section & Claims & Tag \\
+\midrule
+\S\ref{subsec:inner} ($\Mpa(R)$ inner-promotion)
+  & sign-and-mechanism reading & \readout \\
+\S\ref{subsec:outer} (outer $r_t$ via Newtonian limit)
+  & consistency check & \readout \\
+\S\ref{subsec:transition} (transition $\ellsub$)
+  & numerical reading & \readout \\
+\S\ref{sec:consistency} (three consistency checks)
+  & all \S{}4.x & \readout \\
+\S\ref{sec:falsifiers} (N16.1--N16.11)
+  & future-observation falsifiers & \evstag \\
+\S\ref{sec:gaps} (G1 reframed; G2, G3 flagged)
+  & pre-registered gaps + reframed falsifier & \evstag \\
+\S\ref{sec:distinguish} (foil paragraphs)
+  & positioning & \readout \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent
+V.T203 (Cluster Capacity Mass Discrepancy) inherits its
+\texttt{skeleton}/conjectural status from~\cite{KSZCategorical}
+L811--814 verbatim; this note neither narrows nor extends V.T203, only
+structurally relocates its empirical signature
+(\S\ref{subsec:inner} \emph{V.T203 conservation} paragraph). The V.T213
+five-cluster universality is inherited as a calibration prerequisite on
+integrated cluster mass, not as a substructure-resolved theorem
+(\S\ref{sec:tau-position} \emph{KSZ cluster-scale precedent} paragraph).
+
+
+% -----------------------------------------------------------------------
+\section{What this note does NOT claim}\label{sec:non-claims}
+
+\begin{enumerate}[leftmargin=1.4em,itemsep=0.2em]
+\item It does \emph{not} claim Category $\tau$ \emph{derives} the
+$\gamma \gtrsim 2.5$ inner density slope, the SHMF amplitude, the
+$5\sigma$--$40\sigma$ inner-excess amplitude, or the specific $r_t$
+distribution width inferred by Natarajan~et~al.\ from any existing
+$\tau$-corpus primitive. Each is flagged as a pre-registered gap
+(\S\ref{sec:gaps}).
+\item It does \emph{not} claim that $\tau$-physics is Lean-verified
+as external physics. The cluster-substructure context is outside the
+scope of the Lean-formalized $\tau$-internal-mathematics envelope
+(see the dossier~\cite{BareMetalSpineV2}~App.~C).
+\item It does \emph{not} claim an externally-settled resolution of the
+small-scale CDM tensions or of any Clay Millennium problem related to
+gravitational lensing or cluster physics.
+\item It does \emph{not} predict the IllustrisTNG-Cluster
+simulation~\cite{NelsonTNGC2024} as a $\tau$-readout; the simulations
+are external $\Lambda$CDM-expectation comparators, not $\tau$-derivations.
+\item This note is a privately-deposited arXiv response in the Panta Rhei
+research-note format and is not a substitute for direct dialogue, which
+the authors actively welcome and to which the present pre-registration
+is offered as an opening contribution.
+\item It does \emph{not} supersede the conjectural status of V.T203
+in~\cite{KSZCategorical}; the V.T203 cluster mass discrepancy remains
+an open conjectural item, structurally relocated but not narrowed
+by the present note (\S\ref{subsec:inner}).
+\end{enumerate}
+
+
+% -----------------------------------------------------------------------
+\section*{Acknowledgements}
+
+We gratefully acknowledge P.~Natarajan, B.~T.~Chiang, and I.~Dutra for the
+open-access deposit of~\cite{Natarajan2026}, for the rigour of the
+$10^6$-iteration force-resolution bootstrap injection (their Appendix~B,
+building on the Hopkins+2023 FIRE-3 benchmark~\cite{Hopkins2023}), and
+for the structural foreclosure of the conventional SIDM resolution in
+their \S{}10 (with the Chiang+2026b companion
+analysis~\cite{ChiangSimResolution2026}); each of these methodological
+commitments materially shaped the categorical reading developed here.
+Engagement, criticism, and falsification of any of the eleven
+pre-registered N16 rows would be welcomed and would advance the program.
+
+% -----------------------------------------------------------------------
+\bibliographystyle{unsrt}
+\bibliography{references}
+
+\end{document}
