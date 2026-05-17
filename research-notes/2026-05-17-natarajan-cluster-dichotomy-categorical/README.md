@@ -8,13 +8,13 @@ Release date: 2026-05-17
 Type: Research Note
 Publication code: RN-032
 Version: v1.0
-Zenodo DOI: [10.5281/zenodo.20251191](https://doi.org/10.5281/zenodo.20251191)
+OSF DOI: [10.17605/OSF.IO/BFRX3](https://doi.org/10.17605/OSF.IO/BFRX3)
 
 ## Public Routes
 
 - Website: https://panta-rhei.site/publications/research-notes/natarajan-cluster-dichotomy-categorical/
 - PDF: https://panta-rhei.site/assets/pdfs/research-notes/research-note-2026-05-17-natarajan-cluster-dichotomy-categorical.pdf
-- Zenodo: https://doi.org/10.5281/zenodo.20251191
+- OSF: https://osf.io/BFRX3/ (DOI: https://doi.org/10.17605/OSF.IO/BFRX3)
 
 ## Files
 

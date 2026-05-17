@@ -14,9 +14,9 @@ license: CC-BY-4.0
 website: https://panta-rhei.site/publications/research-notes/natarajan-cluster-dichotomy-categorical/
 pdf: https://panta-rhei.site/assets/pdfs/research-notes/research-note-2026-05-17-natarajan-cluster-dichotomy-categorical.pdf
 source: natarajan-cluster-dichotomy-categorical.tex
-doi: 10.5281/zenodo.20251191
-doi_url: https://doi.org/10.5281/zenodo.20251191
-zenodo_url: https://zenodo.org/records/20251191
+doi: 10.17605/OSF.IO/BFRX3
+doi_url: https://doi.org/10.17605/OSF.IO/BFRX3
+osf_url: https://osf.io/BFRX3/
 anchor_paper:
   citation: "Natarajan, P., Chiang, B. T., Dutra, I., 2026, ApJL 1001, L12"
   doi: 10.3847/2041-8213/ae53ea
