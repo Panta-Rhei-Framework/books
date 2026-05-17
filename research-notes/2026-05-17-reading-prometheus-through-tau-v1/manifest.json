@@ -37,10 +37,10 @@
     "version": "v1.2 RC2",
     "status": "RC2 public release candidate",
     "license": "CC-BY-4.0",
-    "doi": "",
-    "doi_url": "",
-    "osf_doi_pending": true,
-    "osf_doi_target_form": "10.17605/OSF.IO/XXXXX",
+    "doi": "10.17605/OSF.IO/76CZR",
+    "doi_url": "https://doi.org/10.17605/OSF.IO/76CZR",
+    "osf_url": "https://osf.io/76CZR/",
+    "osf_short_id": "76CZR",
     "canonical_url": "https://panta-rhei.site/publications/research-notes/reading-prometheus-through-tau/",
     "website_url": "https://panta-rhei.site/publications/research-notes/reading-prometheus-through-tau/",
     "pdf_filename": "research-note-2026-05-17-reading-prometheus-through-tau-rc2.pdf",
@@ -67,5 +67,5 @@
       "/verify/release-manifest/"
     ]
   },
-  "integrity_note": "Hashes attest to the PDF bytes and release source snapshot only; they do not certify correctness, peer review, legal status, or content validity. DOI minting is pending the OSF (Open Science Framework) project creation; the programme migrated from Zenodo to OSF as the primary DOI platform on 2026-05-17."
+  "integrity_note": "Hashes attest to the PDF bytes and release source snapshot only; they do not certify correctness, peer review, legal status, or content validity. The OSF DOI 10.17605/OSF.IO/76CZR (minted 2026-05-17) provides the citation-grade resolvable identifier for this artifact. The programme migrated from Zenodo to OSF as the primary DOI platform on 2026-05-17."
 }
