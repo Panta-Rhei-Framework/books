@@ -10,7 +10,8 @@ Persistent homology, gaze, and the Book VII aesthetic-functional picture
 - Version: v0.9 RC
 - Status: V0.9 RC
 - Artifact availability: local_pdf
-- DOI: Not assigned
+- OSF DOI: [10.17605/OSF.IO/SBPD6](https://doi.org/10.17605/OSF.IO/SBPD6)
+- OSF project: https://osf.io/SBPD6/
 - Website: https://panta-rhei.site/publications/research-notes/aesthetic-topology-pre-symbolic-readout/
 - Source website page: `_research_notes/2026-05-15-aesthetic-topology-pre-symbolic-readout.md`
 - Source website asset path: `site/assets/pdfs/research-notes/research-note-2026-05-15-aesthetic-topology-pre-symbolic-readout-v0-9-rc.pdf`

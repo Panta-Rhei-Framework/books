@@ -1,14 +1,14 @@
 {
   "artifact_availability": "local_pdf",
   "checksums": {
-    "sha256": "e330027ace1ec9eec0982a74ca0ce18664c94fe4c91505355a4c91bd50ba3159",
-    "sha512": "0d0d12a19b8af1f767d51dccdbbe243ea40f613aecc70ba894e7b2afe80fad9c922b0dd56b48af5ba53a9eae0b3dae9a253704f14b3ae8915032780b87a98592"
+    "sha256": "b80cf2f401db16f6f955bee92b09a2235974824382e38402032d2785687862a2",
+    "sha512": "073f92063b85f9a2bb87bbff7a3a29080b7c8dd065f5478866b356bbc0f65c0b4e9037f8711487471ca4100dddc04e6f4a082c3c305fd4b291fe6ef98fbeb798"
   },
   "file": {
-    "bytes": 178728,
+    "bytes": 180493,
     "path": "research-note-2026-05-15-aesthetic-topology-pre-symbolic-readout-v0-9-rc.pdf",
-    "sha256": "e330027ace1ec9eec0982a74ca0ce18664c94fe4c91505355a4c91bd50ba3159",
-    "sha512": "0d0d12a19b8af1f767d51dccdbbe243ea40f613aecc70ba894e7b2afe80fad9c922b0dd56b48af5ba53a9eae0b3dae9a253704f14b3ae8915032780b87a98592",
+    "sha256": "b80cf2f401db16f6f955bee92b09a2235974824382e38402032d2785687862a2",
+    "sha512": "073f92063b85f9a2bb87bbff7a3a29080b7c8dd065f5478866b356bbc0f65c0b4e9037f8711487471ca4100dddc04e6f4a082c3c305fd4b291fe6ef98fbeb798",
     "source_website_asset_path": "site/assets/pdfs/research-notes/research-note-2026-05-15-aesthetic-topology-pre-symbolic-readout-v0-9-rc.pdf"
   },
   "generated_at": "2026-05-15T12:22:56+00:00",
@@ -29,8 +29,8 @@
       "non_claim": "Does not claim:\n- It does not claim that persistent homology measures beauty.\n- It does not claim that Dmitruk et al. prove or validate Category tau.\n- It does not claim that image-filtration topology is Book VII topology.\n- It does not claim proof of artist intent, universal composition law, deployment relevance, policy adoption, or achieved impact.\n\nFalsification surface:\n- Independent reproduction fails to recover the reported image-topology descriptors or gaze/topology comparisons.\n- Color-aware topology, controlled synthesis, saliency baselines, or curatorial controls explain away the Book VII-facing bridge value.\n- Preregistered Category-tau-facing mappings from image descriptors to motif quantities fail under external review or future empirical testing."
     },
     "date": "2026-05-15",
-    "doi": "",
-    "doi_url": "",
+    "doi": "10.17605/OSF.IO/SBPD6",
+    "doi_url": "https://doi.org/10.17605/OSF.IO/SBPD6",
     "external_links": [
       {
         "label": "Anchor paper DOI",
