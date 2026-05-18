@@ -1,0 +1,71 @@
+{
+  "artifact_availability": "local_pdf",
+  "checksums": {
+    "sha256": "2448de5e3600ef02c27b6d87d6546e85938c4438fa27317c77802a7d082c4ec2",
+    "sha512": "039d529dcd2247cbc1ca2c5dc532d67901fbecaa5a07a873ce5f6b42e9bb6fdbcab1a6364815940cb0c573c79f29f0fa0a81eeb238e052e1c47bef06aa9315cf"
+  },
+  "file": {
+    "bytes": 246970,
+    "path": "research-note-2026-05-18-when-search-becomes-structure-rc2.pdf",
+    "sha256": "2448de5e3600ef02c27b6d87d6546e85938c4438fa27317c77802a7d082c4ec2",
+    "sha512": "039d529dcd2247cbc1ca2c5dc532d67901fbecaa5a07a873ce5f6b42e9bb6fdbcab1a6364815940cb0c573c79f29f0fa0a81eeb238e052e1c47bef06aa9315cf",
+    "source_website_asset_path": "site/assets/pdfs/research-notes/research-note-2026-05-18-when-search-becomes-structure-rc2.pdf"
+  },
+  "generated_at": "2026-05-18T08:30:00Z",
+  "id": "2026-05-18-when-search-becomes-structure",
+  "integrity_note": "Hashes and timestamps attest to the PDF bytes only; they do not certify correctness, peer review (the internal 5-referee panel is documented in metadata.yml but is not external peer review), legal status, or content validity. DOI registration is real and resolvable via OSF/DataCite.",
+  "opentimestamps": {
+    "receipt_path": "",
+    "status": "missing",
+    "verification": "not-stamped"
+  },
+  "publication": {
+    "abstract": "This Research Note reads Stephen Wolfram's 2026 ruliological exploration of P vs NP as an external comparator for a narrower Panta Rhei question: when does witness search become finite address construction? The two readings are explicitly parallel, not nested. Post-peer-review-panel RC2 release.",
+    "artifact_availability": "local_pdf",
+    "authors": "Thorsten Fuchs; Anna-Sophie Fuchs",
+    "canonical_url": "https://panta-rhei.site/publications/research-notes/when-search-becomes-structure/",
+    "claim_boundary": {
+      "claim": "This artifact is a publication record. Under finite interface width and a reconstruction discipline, some tau-admissible witness problems can be treated as address construction rather than blind witness search.",
+      "non_claim": "It does not by itself certify correctness, external peer review, empirical adequacy, legal ownership, or solve the orthodox Clay P vs NP problem."
+    },
+    "date": "2026-05-18",
+    "doi": "10.17605/OSF.IO/HPZSN",
+    "doi_url": "https://doi.org/10.17605/OSF.IO/HPZSN",
+    "osf_url": "https://doi.org/10.17605/OSF.IO/HPZSN",
+    "osf_short_id": "HPZSN",
+    "external_links": [
+      {"label": "OSF deposit", "url": "https://doi.org/10.17605/OSF.IO/HPZSN"},
+      {"label": "Companion Construction Spine whitepaper", "url": "https://doi.org/10.17605/OSF.IO/6GJ9K"},
+      {"label": "Wolfram essay", "url": "https://writings.stephenwolfram.com/2026/01/p-vs-np-and-the-difficulty-of-computation-a-ruliological-approach/"}
+    ],
+    "github_path": "research-notes/2026-05-18-when-search-becomes-structure",
+    "license": "CC-BY-4.0",
+    "pdf_filename": "research-note-2026-05-18-when-search-becomes-structure-rc2.pdf",
+    "publication_type": "research_note",
+    "related_lanes": ["publications", "corpus", "verify"],
+    "related_routes": [
+      "/publications/research-notes/when-search-becomes-structure/",
+      "/corpus/construction-spine/",
+      "/corpus/taulib/",
+      "/verify/taulib/",
+      "/verify/release-manifest/",
+      "/corpus/registry/"
+    ],
+    "route_status": "released",
+    "short_url": "",
+    "source_website_page": "https://panta-rhei.site/publications/research-notes/when-search-becomes-structure/",
+    "status": "Released",
+    "subtitle": "A guarded bridge note between Wolfram's ruliological P-vs-NP microcosms and tau-admissible witness construction",
+    "title": "When Witness Search Becomes Address Construction",
+    "version": "RC2",
+    "website_url": "https://panta-rhei.site/publications/research-notes/when-search-becomes-structure/",
+    "zenodo_url": ""
+  },
+  "publication_id": "2026-05-18-when-search-becomes-structure",
+  "publication_key": "research_notes.when_search_becomes_structure",
+  "publication_role": "technical",
+  "schema": "panta-rhei-publication-manifest-v2",
+  "status": "released",
+  "supersedes": "research-notes/2026-05-17-when-search-becomes-structure",
+  "type": "research_note"
+}

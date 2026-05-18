@@ -1,0 +1,103 @@
+publication_id: RN-031
+publication_key: research_notes.when_search_becomes_structure
+title: "When Witness Search Becomes Address Construction"
+subtitle: "A guarded bridge note between Wolfram's ruliological P-vs-NP microcosms and tau-admissible witness construction"
+authors:
+  - Thorsten Fuchs
+  - Anna-Sophie Fuchs
+type: Research Note
+status: RC2 post-peer-review-panel release candidate
+version: RC2
+date: 2026-05-18
+program: Panta Rhei Research Program
+license: CC-BY-4.0
+doi: 10.17605/OSF.IO/HPZSN
+doi_url: https://doi.org/10.17605/OSF.IO/HPZSN
+osf_url: https://doi.org/10.17605/OSF.IO/HPZSN
+osf_short_id: HPZSN
+osf_project_guid: hpzsn
+osf_minted_date: 2026-05-18
+companion:
+  title: "The Panta Rhei Construction Spine: From Finite Kernel to Ontic Closure"
+  doi: 10.17605/OSF.IO/6GJ9K
+  doi_url: https://doi.org/10.17605/OSF.IO/6GJ9K
+anchor_paper:
+  authors:
+    - Stephen Wolfram
+  title: "P vs. NP and the Difficulty of Computation: A Ruliological Approach"
+  year: 2026
+  doi: 10.31855/be91a2c3-b2c
+  doi_url: https://doi.org/10.31855/be91a2c3-b2c
+website: https://panta-rhei.site/publications/research-notes/when-search-becomes-structure/
+pdf: https://panta-rhei.site/assets/pdfs/research-notes/research-note-2026-05-18-when-search-becomes-structure-rc2.pdf
+source: when-witness-search-becomes-address-construction.tex
+supersedes:
+  - publication_path: research-notes/2026-05-17-when-search-becomes-structure
+    pdf_filename: research-note-2026-05-17-when-search-becomes-structure-rc1.pdf
+    version: RC1
+    note: "RC1 (2026-05-17) preserved as historical artefact; superseded by RC2 (2026-05-18) which is the canonical post-panel revision referenced by the OSF deposit."
+tags:
+  - tau-framework
+  - ruliology
+  - p-vs-np
+  - computational-complexity
+  - witness-search
+  - address-construction
+  - crt-reassembly
+  - hopkins-bousfield-pullback
+  - category-tau
+  - effective-topos
+  - razborov-rudich
+  - algebrization
+  - relativization
+  - zfc-provability-horizon
+  - osf
+summary: >
+  This Research Note reads Stephen Wolfram's 2026 ruliological exploration of
+  P vs NP as an external comparator for a narrower Panta Rhei question: when
+  does witness search become finite address construction? The two readings
+  are explicitly parallel, not nested. The note specifies a criterion under
+  which, in a typed admissible fragment, search admits a constructive
+  address-resolution alternative. It does not claim to solve orthodox P vs
+  NP, identify the Ruliad with Category tau, or treat Wolfram's finite
+  experiments as validation of Panta Rhei.
+peer_review_panel:
+  format: "5-referee internal simulation (computational complexity / Wolfram-ruliology / category theory / mathematical logic / editor + recipient-perspective)"
+  verdict: "MAJOR-tilt"
+  high_priority_fixes_applied: 12
+  notable_fixes:
+    - "Retitle to foreground address-construction"
+    - "CRT reassembly rendered as Hopkins–Bousfield arithmetic fracture-square pullback"
+    - "Explicit subsection engaging Razborov–Rudich, Aaronson–Wigderson, Baker–Gill–Solovay barriers"
+    - "ZFC-provability horizon disambiguated"
+    - "Adm_tau stated as propositional predicate on objects of E_2"
+    - "Acknowledgements rewritten to credit WPP community (Gorard, Arsiwalla)"
+claim_boundary:
+  core: >
+    Under finite interface width and a reconstruction discipline, some
+    tau-admissible witness problems can be treated as address construction
+    rather than blind witness search. The tau-admissibility predicate
+    Adm_tau is a propositional predicate on objects of E_2; CRT witness
+    reassembly renders as a Hopkins–Bousfield arithmetic fracture-square
+    pullback in the verifier-witness fibration; the internal collapse
+    tau-P_adm = tau-NP_adm holds with explicit scope qualifier inside the
+    theorem environment.
+  non_claims:
+    - It does not solve orthodox P vs NP.
+    - It does not claim P = NP over unrestricted Turing machines.
+    - It does not claim that the Ruliad is Category tau.
+    - It does not claim Wolfram validates Panta Rhei.
+    - It does not claim every NP witness space is tau-admissible.
+    - It does not export tau-P_adm = tau-NP_adm without a separate bridge theorem.
+    - It does not assert tau-admissibility is ZFC-definable at any specified arithmetic complexity.
+external_links:
+  - label: OSF deposit
+    url: https://doi.org/10.17605/OSF.IO/HPZSN
+  - label: Companion Construction Spine whitepaper
+    url: https://doi.org/10.17605/OSF.IO/6GJ9K
+  - label: Wolfram essay
+    url: https://writings.stephenwolfram.com/2026/01/p-vs-np-and-the-difficulty-of-computation-a-ruliological-approach/
+  - label: Wolfram Institute Ruliology
+    url: https://wolframinstitute.org/research/ruliology
+  - label: Clay P vs NP problem statement
+    url: https://www.claymath.org/millennium/p-vs-np/
